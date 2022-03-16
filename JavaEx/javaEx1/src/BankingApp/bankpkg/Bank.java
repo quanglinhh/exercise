@@ -6,7 +6,7 @@
  * Copyright...
  */
 
-package bankpkg;
+package BankingApp.bankpkg;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -66,14 +66,14 @@ public class Bank {
      */
     public void displayBankDetails(){
         System.out.println("Bank Details of Customer");
-        System.out.println("Bank ID, Bank Name \t Branch Interest(%)");
+        System.out.println("BankID \t Bank Name \t Branch \t Interest(%)");
         System.out.println("-------------------------------------------");
         //Instantiate Iterator reference and attach it with the ArrayList
         Iterator iBank = bankDetails.iterator();
         while (iBank.hasNext()){
-            System.out.println(iBank.next() + " ");
+            System.out.print(iBank.next() + "   ");
         }
         System.out.println(interestRate);
-        System.out.println(" ");
+        System.out.println("  ");
     }
 }
