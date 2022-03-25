@@ -110,9 +110,7 @@ public class  EmployeeSystem{
                 opeations();
             }
         }
-        }
-
-
+    }
 
     public static void main(String[] args) {
         opeations();
