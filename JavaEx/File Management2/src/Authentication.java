@@ -7,30 +7,27 @@ import org.json.simple.parser.ParseException;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.Type;
+import java.util.List;
 
-
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 public class Authentication {
-    public boolean checkLogin(String username, String password) throws FileNotFoundException{
+    public boolean checkLogin(String username, String password) {
         //1. Read file json
-        JSONParser parser = new JSONParser();
-        try{//read json file
-            FileReader reader = new FileReader("user.json");
-            Object obj = parser.parse(reader);
-
-            JSONArray userList = (JSONArray) obj;
-
-            userList.forEach(user -> parseCustomerObject((JSONObject) user));
-
-
-        }catch (FileNotFoundException e){
-            e.printStackTrace();
-        } catch (IOException e) {
-
-        } catch (ParseException e) {
-            e.printStackTrace();
+        Gson gson = new Gson();
+        List<User> userList;
+        try {
+            FileReader reader = new FileReader("customer.json");
+            userList = new Gson().fromJson(reader, new TypeToken<List<User>>(){}.getType());
+            for (User user: userList){
+                System.out.println(user);
+            }
+            userList.equals(username);
+        }catch (FileNotFoundException ex){
+            System.out.println("Khong tim thay file, kiem tra lai !!!");
         }
-
         //2. Compare value from json with input update
 
 

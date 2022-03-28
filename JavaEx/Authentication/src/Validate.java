@@ -22,6 +22,7 @@ public class Validate {
             return password;
         }else{
             throw new RuntimeException("Password không hợp lệ");
+            
         }
     }
 

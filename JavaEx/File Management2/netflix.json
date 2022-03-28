@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Phù thủy xui xẻo",
+    "category": "Bí ẩn| Trẻ em | Phim Mỹ | Chuyển thể từ sách",
+    "actor": "Jay | Graig | American",
+    "language": "English",
+    "publishingYear": 2022,
+    "publishCompany": "Netflix",
+    "time": 90
+  },
+  {
+    "id": 3,
+    "title": "Bạch tuyết",
+    "category": "Gia đình | Trẻ em | Phim Mỹ | Chuyển thể từ sách",
+    "actor": "Jay | Graig | American",
+    "language": "English",
+    "publishingYear": 2022,
+    "publishCompany": "Universal pictures",
+    "time": 90
+  },
+  {
+    "id": 4,
+    "title": "Bà chúa tuyết",
+    "category": "Gia đình | Trẻ em | Phim Mỹ | Chuyển thể từ sách",
+    "actor": "Jay | Graig | American",
+    "language": "English",
+    "publishingYear": 2022,
+    "publishCompany": "Universal pictures",
+    "time": 90
+  },
+  {
+    "id": 5,
+    "title": "Conan",
+    "category": "Gia đình | Trẻ em | Phim Mỹ | Chuyển thể từ sách",
+    "actor": "Jay | Graig | American",
+    "language": "English",
+    "publishingYear": 2022,
+    "publishCompany": "Universal pictures",
+    "time": 90
+  },
+  {
+    "id": 6,
+    "title": "Bảy viên ngọc rồng",
+    "category": "Gia đình | Trẻ em | Phim Mỹ | Chuyển thể từ sách",
+    "actor": "Jay | Graig | American",
+    "language": "English",
+    "publishingYear": 2022,
+    "publishCompany": "Universal pictures",
+    "time": 90
+  },
+  {
+    "id": 7,
+    "title": "Lọ lem",
+    "category": "Gia đình | Trẻ em | Phim Mỹ | Chuyển thể từ sách",
+    "actor": "Jay | Graig | American",
+    "language": "English",
+    "publishingYear": 2022,
+    "publishCompany": "Universal pictures",
+    "time": 90
+  }
+]
