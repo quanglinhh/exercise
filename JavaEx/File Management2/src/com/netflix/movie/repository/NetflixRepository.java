@@ -22,10 +22,7 @@ public class NetflixRepository {
 
             for (Netflix netflix: netflixList) {
                 System.out.println(netflix);// call toString()
-
             }
-
-
         }catch (FileNotFoundException e){
             e.printStackTrace();
         }
