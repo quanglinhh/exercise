@@ -15,7 +15,8 @@ public class Controller {
 
     }
 
-    public static void main(String[] args) throws PhoneBook.CustomException {
+    public static void main(String[] args){
+
         while (true){
             menu();
             int ch = scanner.nextInt();
@@ -38,13 +39,13 @@ public class Controller {
             }
         }
     }
-    private static void delete() throws PhoneBook.CustomException {
+    private static void delete(){
         scanner.nextLine();
         System.out.println("Input name of peron you wan delete");
         name = scanner.nextLine();
         pb.delete(name);
     }
-    private static void insert() throws PhoneBook.CustomException {
+    private static void insert(){
         scanner.nextLine();
         System.out.println("Input name: ");
         name =scanner.nextLine();
@@ -52,7 +53,7 @@ public class Controller {
         phone = scanner.nextLine();
         pb.insert(name, phone);
     }
-    private static void lookUp() throws PhoneBook.CustomException {
+    private static void lookUp(){
         scanner.nextLine();
         System.out.println("Input name of peron you wan search: ");
         name = scanner.nextLine();

@@ -1,16 +1,17 @@
 import java.util.ArrayList;
 
+class CustomException extends Exception{
+    private static final long serialVersionUID = 1L;
+    public CustomException(String str){
+        super();
+        System.out.println(str);
+
+
+    }
+}
 public class PhoneBook extends Phone{
 ArrayList<String> phoneList = new ArrayList<>();
-    class CustomException extends Exception{
-        private static final long serialVersionUID = 1L;
-        public CustomException(String str){
-            super();
-            System.out.println(str);
 
-
-        }
-    }
     @Override
     public int hashCode() {
         return super.hashCode();
@@ -50,7 +51,7 @@ ArrayList<String> phoneList = new ArrayList<>();
     }
 
     @Override
-    void delete(String name) throws CustomException{
+    void delete(String name){
         boolean searched = false;
         for (String s :  phoneList){
             if(name.equals(s.substring(0, s.indexOf(",")))){
@@ -61,7 +62,7 @@ ArrayList<String> phoneList = new ArrayList<>();
             }
         }
         if (!searched){
-            throw new CustomException("Not found person with name: "+name);
+            System.out.println("Not found person with name: "+name);
         }
     }
 }

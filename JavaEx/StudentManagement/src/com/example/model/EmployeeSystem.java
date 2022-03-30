@@ -8,16 +8,7 @@ import java.util.InputMismatchException;
 import java.util.Map;
 import java.util.Scanner;
 
-class CustomException extends Exception {
-   private static final long serialVersionUID = 1L;
 
-   public CustomException(String str){
-       super();
-       System.out.println(str);
-       EmployeeSystem.opeations();
-
-   }
-}
 
 public class  EmployeeSystem{
     public static Map<Integer, Employee> map = new HashMap<>();
@@ -33,22 +24,22 @@ public class  EmployeeSystem{
 
     }
 
-    public static void deleteEmployee(int EmpId) throws CustomException{
+    public static void deleteEmployee(int EmpId){
         if(map.containsKey(EmpId)){
             map.remove(EmpId);
             System.out.println("Successfully Deleted from the List !!");
         }else{
-            throw new CustomException("Not found Exception");
+            System.out.println("Not found Exception");
         }
         opeations();
     }
 
-    public static void searchEmployee(int EmpId) throws  CustomException{
+    public static void searchEmployee(int EmpId){
         if (map.containsKey(EmpId)){
             //map.get(EmpId);
             System.out.println("Employee Details:- "+ map.get(EmpId));
         }else {
-            throw new CustomException("Not Found Exception");
+            System.out.println("Not Found Exception");
         }
         opeations();
     }
