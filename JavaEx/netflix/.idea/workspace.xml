@@ -5,13 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c53eb1bf-6a74-4e89-828f-e581ffc4278a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/netflix.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/NetflixController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Netflix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repository/NetflixRespository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../File Management2/out/production/File management2/com/netflix/movie/repository/NetflixRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../File Management2/out/production/File management2/com/netflix/movie/repository/NetflixRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../File Management2/src/com/netflix/movie/repository/NetflixRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../File Management2/src/com/netflix/movie/repository/NetflixRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,6 +86,7 @@
       <workItem from="1648535910173" duration="4652000" />
       <workItem from="1648561162432" duration="2275000" />
       <workItem from="1648565721809" duration="320000" />
+      <workItem from="1648607350180" duration="1244000" />
     </task>
     <servers />
   </component>
