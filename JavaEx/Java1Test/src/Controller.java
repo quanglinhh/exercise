@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Controller {
@@ -12,7 +13,7 @@ public class Controller {
         System.out.println("3. Delete phone");
         System.out.println("4. Shutdown");
         System.out.println("===============================");
-
+        System.out.println("Please choose an obtion: ");
     }
 
     public static void main(String[] args){
@@ -20,23 +21,28 @@ public class Controller {
         while (true){
             menu();
             int ch = scanner.nextInt();
-            System.out.println("Please choose an obtion: ");
-            switch (ch){
-                case 1:
-                    insert();
-                    break;
-                case 2:
-                    lookUp();
-                    break;
-                case 3:
-                    delete();
-                    break;
-                case 4:
-                    System.exit(0);
-                    break;
-                default:
-                    break;
+            try {
+                switch (ch){
+                    case 1:
+                        insert();
+                        break;
+                    case 2:
+                        lookUp();
+                        break;
+                    case 3:
+                        delete();
+                        break;
+                    case 4:
+                        System.exit(0);
+                        break;
+                    default:
+                        break;
+                }
+            }catch(Exception e){
+                System.out.println("Sai cu phap");
             }
+            System.out.println("Please choose an obtion: ");
+
         }
     }
     private static void delete(){

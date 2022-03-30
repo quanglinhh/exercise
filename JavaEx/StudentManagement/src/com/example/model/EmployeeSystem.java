@@ -76,9 +76,7 @@ public class  EmployeeSystem{
                 int EmpId2 = scanner2.nextInt();
                 try {
                     deleteEmployee(EmpId2);
-                } catch (CustomException e) {
-                    //e.printStackTrace();
-                }
+                } vf
             }
             case 3 -> {
                 System.out.println("Enter Employee Id");
