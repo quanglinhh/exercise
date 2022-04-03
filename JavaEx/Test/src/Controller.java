@@ -1,5 +1,4 @@
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Controller {
@@ -18,10 +17,11 @@ public class Controller {
     }
 
     public static void main(String[] args){
-        try {
+
         while (true){
             menu();
             int ch = scanner.nextInt();
+            try{
                 switch (ch){
                     case 1:
                         insert();
@@ -38,12 +38,11 @@ public class Controller {
                     default:
                         break;
                 }
+            }catch (Exception e){
+                e.printStackTrace();
             }
 
-
-        }
-        catch(InputMismatchException e){
-            System.out.println("Sai cu phap ");
+            System.out.println("Please choose an obtion: ");
 
         }
     }

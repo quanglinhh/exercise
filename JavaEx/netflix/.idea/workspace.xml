@@ -5,7 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c53eb1bf-6a74-4e89-828f-e581ffc4278a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../File Management2/src/com/example/deamon/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../File Management2/src/com/example/deamon/DeamonThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../File Management2/src/com/example/deamon/NoneDeamonThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../File Management2/src/com/example/thread/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../File Management2/src/com/example/thread/ThreadDemo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../File Management2/src/com/example/thread/ThreadDemo3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java2Lab1/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java2Lab1/src/part1/Race.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java2Lab1/src/part1/RaceCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java2Lab1/src/part4/ex2/EndThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java2Lab1/src/part4/ex2/NewThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java2Lab1/src/part4/ex2/RunThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java2Lab1/src/part4/ex3/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java2Lab1/src/part4/ex3/MessageThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/PhoneBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../File Management2/out/production/File management2/com/netflix/movie/Application$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../File Management2/out/production/File management2/com/netflix/movie/Application$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../File Management2/out/production/File management2/com/netflix/movie/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../File Management2/out/production/File management2/com/netflix/movie/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../File Management2/src/com/netflix/movie/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../File Management2/src/com/netflix/movie/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java1Test/out/production/Java1Test/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java1Test/out/production/Java1Test/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java1Test/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java1Test/src/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix/controller/NetflixController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix/controller/NetflixController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix/repository/NetflixRespository$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix/repository/NetflixRespository$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix/repository/NetflixRespository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix/repository/NetflixRespository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/NetflixController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/NetflixController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/NetflixRespository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/NetflixRespository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +63,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../File Management2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Authentication" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -87,6 +114,9 @@
       <workItem from="1648561162432" duration="2275000" />
       <workItem from="1648565721809" duration="320000" />
       <workItem from="1648607350180" duration="1244000" />
+      <workItem from="1648733303237" duration="2044000" />
+      <workItem from="1648779147462" duration="4038000" />
+      <workItem from="1648985031693" duration="55000" />
     </task>
     <servers />
   </component>
