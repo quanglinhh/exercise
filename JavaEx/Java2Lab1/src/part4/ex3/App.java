@@ -12,7 +12,8 @@ public class App {
         String priority;
 
         Scanner sc = new Scanner(System.in);
-
+        System.out.println("MESSAGE BOARD");
+        System.out.println("====================");
         System.out.print("Number of messages: ");
         count = sc.nextInt();
 

@@ -36,8 +36,9 @@ public class NewThread extends Thread{
             }catch (InterruptedException e){
                 e.printStackTrace();
             }
-        }
 
+        }
+        System.out.println("Main thread exiting");
     }
 
 }
