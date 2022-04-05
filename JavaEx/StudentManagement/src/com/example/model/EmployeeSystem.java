@@ -7,12 +7,20 @@ import java.util.HashMap;
 import java.util.InputMismatchException;
 import java.util.Map;
 import java.util.Scanner;
+class CustomException extends Exception{
+    private static final long serialVersionUID = 1l;
 
+    public CustomException(String str){
+        super();
+        System.out.println(str);
+        EmployeeSystem.opeations();
+    }
+}
 
 
 public class  EmployeeSystem{
     public static Map<Integer, Employee> map = new HashMap<>();
-    
+
     public static void addEmployee(String name, int age, int id){
         try {
             Employee emp = new Employee(name, age, id);
@@ -24,7 +32,7 @@ public class  EmployeeSystem{
 
     }
 
-    public static void deleteEmployee(int EmpId){
+    public static void deleteEmployee(int EmpId) throws CustomException{
         if(map.containsKey(EmpId)){
             map.remove(EmpId);
             System.out.println("Successfully Deleted from the List !!");
@@ -34,7 +42,7 @@ public class  EmployeeSystem{
         opeations();
     }
 
-    public static void searchEmployee(int EmpId){
+    public static void searchEmployee(int EmpId) throws CustomException{
         if (map.containsKey(EmpId)){
             //map.get(EmpId);
             System.out.println("Employee Details:- "+ map.get(EmpId));
@@ -48,7 +56,7 @@ public class  EmployeeSystem{
         System.out.println(map.toString());
     }
 
-    public static void opeations() {
+    public static void opeations(){
         System.out.println("\n****** Employee management system ********");
         System.out.println("1. Add Employee");
         System.out.println("2. Delete Employee");
@@ -76,7 +84,9 @@ public class  EmployeeSystem{
                 int EmpId2 = scanner2.nextInt();
                 try {
                     deleteEmployee(EmpId2);
-                } vf
+                }catch (CustomException e){
+
+                }
             }
             case 3 -> {
                 System.out.println("Enter Employee Id");

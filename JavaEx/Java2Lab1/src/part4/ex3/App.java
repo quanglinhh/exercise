@@ -23,7 +23,7 @@ public class App {
                 sc.nextLine();
                 messageThread[i] = new MessageThread();
                 System.out.print("Message "+ (i+1)+ ": ");
-                messageThread[i].setMessage(sc.nextLine());
+                messageThread[i].setMessage(sc.nextLine());//1.multithreading,2.multitasking
                 System.out.print("Timeout: ");
                 messageThread[i].setTimeOut(sc.nextInt());
                 if(messageThread[i].getTimeOut() == 1000){
