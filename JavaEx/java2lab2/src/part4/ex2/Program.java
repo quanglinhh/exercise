@@ -1,9 +1,9 @@
 package part4.ex2;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.util.List;
 import java.util.Scanner;
 
 public class Program {
@@ -22,26 +22,21 @@ public class Program {
         int ch;
         System.out.print("Run: ");
         ch = sc.nextInt();
+        File f = new File("D:\\exercise\\JavaEx\\java2lab2\\Programs.txt");
         try{
-            FileReader fileReader = new FileReader("Program.txt");
-            BufferedReader br = new BufferedReader(fileReader);
-//            String[] arr = new String[8];
-//
-//            for (int i = 0 ; i <8; i++){
-//                arr[i] = br.readLine();
-//            }
-//            System.out.println(arr);
-            String line = " ";
-
-            while (true){
-                if(line==null){
-                    break;
-                }
-                line = br.readLine();
-                System.out.println(line);
+            List<String> allText = Files.readAllLines(f.toPath(), StandardCharsets.UTF_8);
+            for(int i = 0 ; i > allText.size(); i++){
+                System.out.println(allText.get(i));
             }
-        }catch (FileNotFoundException e){
-        }
+
+            for (int i = 1; i <=8;i++){
+                if(ch == i){
+                    String line = String.valueOf(allText.get(i-1));
+                    System.out.println(line);
+                }
+            }
+
+        }catch (FileNotFoundException e){}
 
     }
 }
