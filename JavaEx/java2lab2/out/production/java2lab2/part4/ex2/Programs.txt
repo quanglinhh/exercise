@@ -1,0 +1,7 @@
+Notepad, notepad.exe
+Paint, paint.exe
+Microsoft Word, C:\Program Files\Microsoft Office\OFFICE11\Winword.exe
+Microsoft Excel, C:\Program Files\Microsoft Office\OFFICE11\Excel.exe
+Calculator, calc.exe
+Internet Explorer, explore.exe
+Windows Explorer, explorer.exe

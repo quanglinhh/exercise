@@ -1,15 +1,17 @@
-package part4.ex1;
+package Test2;
 
 public class Task {
     private int taskId;
     private String taskName;
+    private String worker;
 
-    public Task(int taskId,String taskName/*, String worker*/) {
+    public Task(int taskId,String taskName, String worker) {
         this.taskId = taskId;
         this.taskName = taskName;
-
+        this.worker = worker;
     }
-
+    public Task(int taskId, String taskName) {
+    }
 
     //
     public String getTaskName() {
@@ -18,6 +20,14 @@ public class Task {
 
     public void setTaskName(String taskName) {
         this.taskName = taskName;
+    }
+
+    public String getWorker() {
+        return worker;
+    }
+
+    public void setWorker(String worker) {
+        this.worker = worker;
     }
 
     public int getTaskId() {
@@ -30,8 +40,6 @@ public class Task {
 
     @Override
     public String toString() {
-        return taskId + " ---------- "+ taskName + " --------------- ";
+        return taskId + " ---------- "+ taskName + " --------------- "+worker;
     }
-
-
 }

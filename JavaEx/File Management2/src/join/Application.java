@@ -13,6 +13,7 @@ public class Application {
 
         joinThreadA.join();
         joinThreadB.join();
+
         //Chờ cho ThreadA và ThreadB done thì message được gọi
         System.out.println("Message form main thread...");
         System.out.println("Thead A isLive? "+joinThreadA.isAlive());
