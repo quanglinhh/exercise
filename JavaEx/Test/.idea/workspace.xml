@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef1a2344-06ad-4242-829e-cb1256dcd002" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../java2lab2/Programs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java2lab2/out/production/java2lab2/part4/ex2/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/../java2lab2/out/production/java2lab2/part4/ex2/Program.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java2lab2/src/part4/ex2/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java2lab2/src/part4/ex2/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../File Management2/src/collection/HashMapDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../File Management2/src/collection/LinkedListDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java2Lab3/src/Part1/ex1/LyricWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java2Lab3/src/Part1/ex2/LyricSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +78,8 @@
       <workItem from="1649250566562" duration="603000" />
       <workItem from="1649300844545" duration="619000" />
       <workItem from="1649339966285" duration="148000" />
+      <workItem from="1649401083625" duration="207000" />
+      <workItem from="1649408626762" duration="670000" />
     </task>
     <servers />
   </component>
