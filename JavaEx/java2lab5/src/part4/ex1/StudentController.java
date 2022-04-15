@@ -82,14 +82,14 @@ public class StudentController {
     }
     public void update(Student studentUpdate, int index) throws IOException {
         Scanner scanner = new Scanner(System.in);
-
-        while (true){
+        int ch = 0;
+        while (ch!=3){
             System.out.println("Choose update: ");
             System.out.println("1. Update age");
             System.out.println("2. Update mark");
             System.out.println("3. Complete");
             System.out.print("Your choice: ");
-            int ch = scanner.nextInt();
+            ch = scanner.nextInt();
             switch (ch) {
                 case 1:
                     System.out.print("enter the age: ");
@@ -102,11 +102,6 @@ public class StudentController {
                     studentUpdate.setMark(mark);
                     break;
 
-                case 3:
-                    System.out.println(studentUpdate);
-                    Main main = new Main();
-                    main.studentManager();
-                    break;
             }
         }
     }
