@@ -5,23 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c53eb1bf-6a74-4e89-828f-e581ffc4278a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Test/src/Test2/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test/src/Test2/TaskManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test/src/Test2/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java2lab2/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java2lab2/.idea/libraries/gson_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java2lab2/Tasks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java2lab2/src/part4/ex1/Home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java2lab2/src/part4/ex1/TaskList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java2lab2/src/part4/ex1/Worker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentManagement/src/com/example/model/EmployeeSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentManagement/src/com/example/model/EmployeeSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test/out/production/Test/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/out/production/Test/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java2lab2/java2lab2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../java2lab2/java2lab2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java2lab2/out/production/java2lab2/part2/Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java2lab2/out/production/java2lab2/part2/TaskManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java2lab2/src/part4/ex1/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java2lab2/src/part4/ex1/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java2lab2/src/part4/ex1/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java2lab2/src/part4/ex1/TaskManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/test1/HasMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/test1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java2lab5/src/part4/ex1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java2lab5/src/part4/ex1/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java2lab5/src/part4/ex1/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java2Lab3/src/Part1/ex3/PlanetDiameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java2Lab3/src/Part1/ex3/PlanetDiameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Test" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -115,6 +105,7 @@
       <workItem from="1649232757017" duration="29000" />
       <workItem from="1649235409310" duration="441000" />
       <workItem from="1649239411821" duration="2677000" />
+      <workItem from="1649991839484" duration="1361000" />
     </task>
     <servers />
   </component>

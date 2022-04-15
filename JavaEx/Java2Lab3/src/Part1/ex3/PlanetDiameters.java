@@ -19,9 +19,10 @@ public class PlanetDiameters {
         for(int i = 0; i < names.length;i++){
             planets.put(names[i], diameters[i]);
         }
+
         //Traverse the map
         Iterator it = planets.entrySet().iterator();
-        while (it.hasNext()){
+        while(it.hasNext()){
             Map.Entry e = (Map.Entry) it.next();
             System.out.println(e.getKey() + ": "+ e.getValue());
         }
@@ -37,5 +38,6 @@ public class PlanetDiameters {
             else
                 System.out.println("The diameter of "+ name + " is"+ planets.get(name));
         }
+
     }
 }
