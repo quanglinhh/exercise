@@ -5,6 +5,7 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Scanner;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -18,6 +19,19 @@ public class StudentController {
         student.setAge(age);
         student.setMark(mark);
         studentList.add(student);
+    }
+    public void updateStudent(String nameUpdate) throws IOException {
+        for(int i = 0; i < studentList.size();i++){
+            if(Objects.equals(nameUpdate, studentList.get(i).getName())){
+                System.out.println("Update student "+studentList.get(i).getName());
+                Student studentUpdate = studentList.get(i);
+                StudentController studentController = new StudentController();
+                studentController.update(studentUpdate, i);
+            }
+            else if(i == (studentList.size()-1)){
+                System.out.println("Not found student");
+            }
+        }
     }
     public void displayAllStudent(){
         for (Student student : studentList){
@@ -63,7 +77,40 @@ public class StudentController {
                 System.out.println(student);
             }
         }catch (FileNotFoundException e){
-            System.out.println("");
+
         }
     }
+    public void update(Student studentUpdate, int index) throws IOException {
+        Scanner scanner = new Scanner(System.in);
+
+        while (true){
+            System.out.println("Choose update: ");
+            System.out.println("1. Update age");
+            System.out.println("2. Update mark");
+            System.out.println("3. Complete");
+            System.out.print("Your choice: ");
+            int ch = scanner.nextInt();
+            switch (ch) {
+                case 1:
+                    System.out.print("enter the age: ");
+                    int age = scanner.nextInt();
+                    studentUpdate.setAge(age);
+                    break;
+                case 2:
+                    System.out.print("Enter the mark: ");
+                    float mark = scanner.nextFloat();
+                    studentUpdate.setMark(mark);
+                    break;
+
+                case 3:
+                    System.out.println(studentUpdate);
+                    Main main = new Main();
+                    main.studentManager();
+                    break;
+            }
+        }
+    }
+
+
+
 }

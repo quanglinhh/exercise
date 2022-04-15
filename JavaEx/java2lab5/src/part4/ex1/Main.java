@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void studentManager() throws IOException {
         Scanner scanner = new Scanner(System.in);
         StudentController controller = new StudentController();
         while (true){
@@ -24,6 +24,10 @@ public class Main {
                     controller.addStudent(rollNum,name,age,mark);
                     break;
                 case 2:
+                    scanner.nextLine();
+                    System.out.print("Enter the name of student you want to update: ");
+                    String nameUpdate = scanner.nextLine();
+                    controller.updateStudent(nameUpdate);
                     break;
                 case 3:
                     scanner.nextLine();
@@ -63,4 +67,9 @@ public class Main {
         System.out.println("8. Exit");
         System.out.print("Your choice: ");
     }
+    public static void main(String[] args) throws IOException {
+        Main main = new Main();
+        main.studentManager();
+    }
+
 }
