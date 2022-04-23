@@ -17,7 +17,6 @@ public class ControllerEmployee {
         System.out.println("Đã thêm thành công employee: "+empName);
     }
     public static void getEmployeeByName(String name) throws SQLException, ClassNotFoundException {
-
         Connection connection = SQLServerConnection.getSQLServerConnection();
         containName(name);
         if(containName(name)){
@@ -35,6 +34,8 @@ public class ControllerEmployee {
                 System.out.println("  "+empId+"    |  "+empNo+"  |  "+name);
             }
             System.out.println("-------------------------------");
+        }else {
+            System.out.println("Employee không tồn tại");
         }
 
     }

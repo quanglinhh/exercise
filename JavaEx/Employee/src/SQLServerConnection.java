@@ -13,7 +13,6 @@ public class SQLServerConnection {
         Connection connection = getSQLServerConnection(hostName,database,instanceName,useName,password);
         return connection;
     }
-
     public static Connection getSQLServerConnection(String hostName, String databaseName,String instanceName, String userName, String password) throws ClassNotFoundException, SQLException {
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 
@@ -23,14 +22,5 @@ public class SQLServerConnection {
         Connection connection= DriverManager.getConnection(connectionString,userName,password);
         return connection;
 
-    }
-
-    public static void main(String[] args) throws SQLException, ClassNotFoundException {
-        Connection conn=getSQLServerConnection();
-        if (conn!=null){
-            System.out.println("ket noi thanh cong");
-        }else {
-            System.out.println("Khong tra ve connection");
-        }
     }
 }
