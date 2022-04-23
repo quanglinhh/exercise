@@ -18,7 +18,7 @@ class CustomException extends Exception{
 }
 
 
-public class  EmployeeSystem{
+public class  EmployeeSystem {
     public static Map<Integer, Employee> map = new HashMap<>();
 
     public static void addEmployee(String name, int age, int id){

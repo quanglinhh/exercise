@@ -1,10 +1,8 @@
-package jdbcapp;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class SQLSeverConnection {
+public class SQLServerConnection {
     public static Connection getSQLServerConnection()throws SQLException,ClassNotFoundException {
         String hostName="localhost";
         String instanceName="LAPTOP-0P2V8T43\\LINHDQ";
@@ -21,7 +19,7 @@ public class SQLSeverConnection {
 
         String connectionString="jdbc:sqlserver://"+hostName+":1433" +";instance="+instanceName +";databaseName="+databaseName;
 
-//        String connectionString="jdbc:jtds:sqlserver://localhost:1433/myjdbcapp;instance=LINHDQ";
+
         Connection connection= DriverManager.getConnection(connectionString,userName,password);
         return connection;
 

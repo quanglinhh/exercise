@@ -8,9 +8,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="gson-2.9.0" level="project" />
-    <orderEntry type="library" name="mssql-jdbc-8.2.2.jre8" level="project" />
-    <orderEntry type="library" name="mssql-jdbc-10.2.0.jre17" level="project" />
     <orderEntry type="library" name="mysql-connector-java-8.0.28" level="project" />
-    <orderEntry type="library" name="mssql-jdbc-10.2.0.jre171" level="project" />
+    <orderEntry type="library" name="mssql-jdbc-8.2.2.jre8" level="project" />
   </component>
 </module>
