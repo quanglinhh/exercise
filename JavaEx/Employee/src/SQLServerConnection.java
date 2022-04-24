@@ -5,7 +5,7 @@ import java.sql.SQLException;
 public class SQLServerConnection {
     public static Connection getSQLServerConnection()throws SQLException,ClassNotFoundException {
         String hostName="localhost";
-        String instanceName="LAPTOP-0P2V8T43\\LINHDQ";
+        String instanceName="LAPTOP-0P2V8T43\\SQLEXPRESS01";
         String database="myjdbcapp";
         String useName="sa";
         String password="as";
