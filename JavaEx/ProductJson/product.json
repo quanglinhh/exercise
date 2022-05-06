@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "proName":"iphone13",
+    "proDesc": "the new product",
+    "price": 3000
+  },
+  {
+    "id": 2,
+    "proName":"iphone12",
+    "proDesc": "the new product",
+    "price": 2500
+  },
+  {
+    "id": 3,
+    "proName":"iphone11",
+    "proDesc": "the new product",
+    "price": 2000
+  },
+  {
+    "id": 4,
+    "proName":"iphone10",
+    "proDesc": "the new product",
+    "price": 1500
+  }
+]
