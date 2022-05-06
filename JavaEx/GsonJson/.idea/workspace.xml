@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be250d47-9915-44a4-a563-24c874c2e3ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Java1Test/src/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java1Test/src/Phone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java1Test/src/PhoneBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../netflix/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../netflix/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../File Management2/src/jdbcapp/mvc/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../File Management2/src/jdbcapp/mvc/model/ProductDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../File Management2/src/jdbcapp/mvc/model/ProductDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JP2Practical/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../File Management2/src/jdbcapp/mvc/view/LoginConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/../File Management2/src/jdbcapp/mvc/view/LoginConsole.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +30,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../StudentManagement" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../File Management2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -49,6 +50,7 @@
       <workItem from="1648089913430" duration="1707000" />
       <workItem from="1648117274769" duration="87000" />
       <workItem from="1648624051839" duration="189000" />
+      <workItem from="1651760695246" duration="48000" />
     </task>
     <servers />
   </component>

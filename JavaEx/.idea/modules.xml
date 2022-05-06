@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Authentication/Authentication.iml" filepath="$PROJECT_DIR$/Authentication/Authentication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Employee/Employee.iml" filepath="$PROJECT_DIR$/Employee/Employee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/File Management2/File Management2.iml" filepath="$PROJECT_DIR$/File Management2/File Management2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JP2Practical/JP2Practical.iml" filepath="$PROJECT_DIR$/JP2Practical/JP2Practical.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java03/Java03.iml" filepath="$PROJECT_DIR$/Java03/Java03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java1Test/Java1Test.iml" filepath="$PROJECT_DIR$/Java1Test/Java1Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java2Lab1/Java2Lab1.iml" filepath="$PROJECT_DIR$/Java2Lab1/Java2Lab1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java2Lab3/Java2Lab3.iml" filepath="$PROJECT_DIR$/Java2Lab3/Java2Lab3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaEx.iml" filepath="$PROJECT_DIR$/JavaEx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/JavaEx1.iml" filepath="$PROJECT_DIR$/java/JavaEx1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StudentManagement/StudentManagement.iml" filepath="$PROJECT_DIR$/StudentManagement/StudentManagement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/connectToSQLServer/connectToSQLServer.iml" filepath="$PROJECT_DIR$/connectToSQLServer/connectToSQLServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java04/java04.iml" filepath="$PROJECT_DIR$/java04/java04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java2lab2/java2lab2.iml" filepath="$PROJECT_DIR$/java2lab2/java2lab2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java2lab5/java2lab5.iml" filepath="$PROJECT_DIR$/java2lab5/java2lab5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java2lab6/java2lab6.iml" filepath="$PROJECT_DIR$/java2lab6/java2lab6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaEx1/javaEx1.iml" filepath="$PROJECT_DIR$/javaEx1/javaEx1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab/lab.iml" filepath="$PROJECT_DIR$/lab/lab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labJava6/labJava6.iml" filepath="$PROJECT_DIR$/labJava6/labJava6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lambdaExpression/lambdaExpression.iml" filepath="$PROJECT_DIR$/lambdaExpression/lambdaExpression.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netflix/netflix.iml" filepath="$PROJECT_DIR$/netflix/netflix.iml" />
+    </modules>
+  </component>
+</project>

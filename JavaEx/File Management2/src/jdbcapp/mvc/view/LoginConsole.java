@@ -20,7 +20,7 @@ public class LoginConsole {
     public int menu(){
         System.out.println("=====Login=====");
         System.out.println("1. Login Statement");
-        System.out.println("2. Find by name");
+        System.out.println("2. Login Prepare Statement");
         System.out.println("3. Exit");
 
         int choice = readInt(0,3);
