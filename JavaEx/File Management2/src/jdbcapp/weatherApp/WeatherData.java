@@ -61,8 +61,8 @@ public class WeatherData {
     }
 
 //    public static void main(String[] args) throws IOException {
-////        WeatherData weatherData = new WeatherData("hanoi","vietnam");
-////        System.out.println(weatherData.weatherRootData().getCrood().lat);
+//        WeatherData weatherData = new WeatherData("hanoi","vietnam");
+//        System.out.println(weatherData.weatherRootData().getCrood().lat);
 //        WeatherData weatherData = new WeatherData();
 //        weatherData.weatherRootData();
 //    }
