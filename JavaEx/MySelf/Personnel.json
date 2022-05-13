@@ -1,0 +1,20 @@
+[
+  {
+    "Worker": [
+      {
+        "name":"linh",
+        "age": 24
+      },
+      {
+        "name": "linh2",
+        "age": 21
+      }
+    ],
+    "Engineer": [
+
+    ],
+    "Staff": [
+
+    ]
+  }
+]

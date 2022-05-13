@@ -1,0 +1,6 @@
+=============SOLID JAVA==================
+1.S:Single responsibility principle  -> Mỗi class làm 1 công việc duy nhất
+2.0
+3.L
+4.I
+5.D

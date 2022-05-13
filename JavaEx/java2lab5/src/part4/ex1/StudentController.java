@@ -12,28 +12,33 @@ import com.google.gson.reflect.TypeToken;
 
 public class StudentController {
     public List<Student> studentList = new ArrayList<>();
-    public void addStudent(int rollNum, String name, int age, float mark){
+    public void addStudent(int rollNum, String name, int age, float mark) throws IOException {
        Student student = new Student();
         student.setRollNumber(rollNum);
         student.setName(name);
         student.setAge(age);
         student.setMark(mark);
         studentList.add(student);
+        saveToFile();
     }
     public void updateStudent(String nameUpdate) throws IOException {
+        loadFromFile();
         for(int i = 0; i < studentList.size();i++){
             if(Objects.equals(nameUpdate, studentList.get(i).getName())){
                 System.out.println("Update student "+studentList.get(i).getName());
                 Student studentUpdate = studentList.get(i);
                 StudentController studentController = new StudentController();
                 studentController.update(studentUpdate, i);
+                saveToFile();
             }
             else if(i == (studentList.size()-1)){
                 System.out.println("Not found student");
             }
         }
+
     }
     public void displayAllStudent(){
+        loadFromFile();
         for (Student student : studentList){
             System.out.println(student);
         }
@@ -60,7 +65,7 @@ public class StudentController {
     public void saveToFile()throws IOException {
         try{
             Gson gson = new Gson();
-            FileWriter writer = new FileWriter("Students.json",true);
+            FileWriter writer = new FileWriter("Students.json");
             String information = gson.toJson(studentList);
             writer.write(information);
             writer.close();
@@ -73,9 +78,6 @@ public class StudentController {
             Reader reader = new FileReader("Students.json");
             Type type = new TypeToken<List<Student>>(){}.getType();
             studentList = new Gson().fromJson(reader,type);
-            for(Student student : studentList){
-                System.out.println(student);
-            }
         }catch (FileNotFoundException e){
 
         }

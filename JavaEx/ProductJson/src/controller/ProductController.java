@@ -3,7 +3,7 @@ package controller;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import entity.Product;
-import model.ReadProducts;
+
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
