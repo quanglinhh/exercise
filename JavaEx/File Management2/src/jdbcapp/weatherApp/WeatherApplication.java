@@ -10,7 +10,7 @@ public class WeatherApplication {
         System.out.println(weatherData.weatherRootData().getCoord().lat);
 
 
-        System.out.println(weatherData.weatherRootData().getWeather()[0].getId());
+        System.out.println(weatherData.weatherRootData().getWeather()[0].getMain());
         System.out.println(weatherData.weatherRootData().getWind().speed);
         System.out.println(weatherData.weatherRootData().getMain().temp);
         System.out.println(weatherData.weatherRootData().getClouds().all);
