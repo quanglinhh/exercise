@@ -135,9 +135,10 @@ public class WeatherRoot {
         this.coord = coord;
     }
 
-    public String getWeather() {
-        return Arrays.toString(weather);
+    public jdbcapp.weatherApp.Weather[] getWeather() {
+        return weather;
     }
+
 
 
     @Override
