@@ -1,3 +1,5 @@
+package weather;
+
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -10,8 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WeatherData {
-
-    List<Weather> weathers = new ArrayList<>();
+    public List<Weather> weathers = new ArrayList<>();
     public static String getAPIJson(String link) throws IOException {
         StringBuilder data = new StringBuilder();
         URL url = new URL(link);
@@ -24,7 +25,7 @@ public class WeatherData {
     }
     public static String getLink(){
         String link = "http://dataservice.accuweather.com/forecasts/v1/hourly/" +
-                "12hour/353412?apikey=93Qg780lHwYM4SO58n7DFPLqHg4oKADn&language=vi-vn&metric=true";
+                "12hour/353412?apikey=dyCOwm4FKTSGcKrBh7HDyrp7cA5p6HUg&language=vi-vn&metric=true";
         return link;
     }
     public List<Weather> weatherRootData() throws IOException {
@@ -34,9 +35,5 @@ public class WeatherData {
         return  weathers;
     }
 
-//    public static void main(String[] args) throws IOException {
-//
-//        WeatherData weatherData = new WeatherData();
-//        weatherData.weatherRootData();
-//    }
+
 }

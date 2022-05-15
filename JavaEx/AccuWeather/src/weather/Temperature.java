@@ -1,3 +1,5 @@
+package weather;
+
 public class Temperature {
     float Value;
     String Unit;

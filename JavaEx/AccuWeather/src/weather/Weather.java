@@ -1,26 +1,39 @@
+package weather;
+
 public class Weather {
     String DateTime;
     int EpochDateTime;
     int WeatherIcon;
     String IconPhrase;
     boolean HasPrecipitation;
+    String PrecipitationType;
     boolean IsDaylight;
     Temperature Temperature;
     int PrecipitationProbability;
     String MobileLink;
     String Link;
 
-    public Weather(String dateTime, int epochDateTime, int weatherIcon, String iconPhrase, boolean hasPrecipitation, boolean isDaylight, Temperature temperature, int precipitationProbability, String mobileLink, String link) {
+    public Weather(String dateTime, int epochDateTime, int weatherIcon, String iconPhrase, boolean hasPrecipitation, String precipitationType, boolean isDaylight, Temperature temperature, int precipitationProbability, String mobileLink, String link) {
         DateTime = dateTime;
         EpochDateTime = epochDateTime;
         WeatherIcon = weatherIcon;
         IconPhrase = iconPhrase;
         HasPrecipitation = hasPrecipitation;
+        PrecipitationType = precipitationType;
         IsDaylight = isDaylight;
         Temperature = temperature;
         PrecipitationProbability = precipitationProbability;
         MobileLink = mobileLink;
         Link = link;
+
+    }
+
+    public String getPrecipitationType() {
+        return PrecipitationType;
+    }
+
+    public void setPrecipitationType(String precipitationType) {
+        PrecipitationType = precipitationType;
     }
 
     public String getDateTime() {

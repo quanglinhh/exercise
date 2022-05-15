@@ -1,20 +1,21 @@
+package weather.repository;
+
 import com.microsoft.sqlserver.jdbc.SQLServerDataSource;
-import com.microsoft.sqlserver.jdbc.SQLServerException;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 
-public class SQLServerConnection {
-
-    public static <SQLServerDataSource> Connection getSQLServerConnection() throws SQLException, ClassNotFoundException{
+public class SQLServerConnection{
+    public static Connection getSQLServerConnection() throws SQLException, ClassNotFoundException{
         SQLServerDataSource ds = new SQLServerDataSource();
         ds.setUser("sa");
         ds.setPassword("as");
         ds.setPortNumber(1433);
-        ds.setDatabaseName("myjdbcapp");
-        ds.setServerName("LAPTOP-0P2V8T43\\LINHDQ");
+        ds.setDatabaseName("weatherApp");
+        ds.setServerName("LAPTOP-0P2V8T43\\SQLEXPRESS01");
         return ds.getConnection();
     }
+
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         Connection conn= getSQLServerConnection();
         if (conn!=null){
