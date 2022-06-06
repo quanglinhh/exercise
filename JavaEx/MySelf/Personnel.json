@@ -1,20 +1,12 @@
-[
-  {
-    "Worker": [
-      {
-        "name":"linh",
-        "age": 24
-      },
-      {
-        "name": "linh2",
-        "age": 21
-      }
-    ],
-    "Engineer": [
-
-    ],
-    "Staff": [
-
-    ]
-  }
-]
+{
+  "worker": [
+    {
+      "lever": 2,
+      "name": "Linh",
+      "age": 20,
+      "gender": "nam",
+      "address": "HN"
+    },
+    null
+  ]
+}

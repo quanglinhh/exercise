@@ -16,14 +16,12 @@ public class LoginDAOImpl implements loginDAO{
                 +"AND password='"+users.getPassword()+"'";
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery(query);
-
-        while (resultSet.next()){
+        while(resultSet.next()){
             System.out.println("Login thanh cong: "+resultSet.getString("username"));
             return users.getPassword();
         }
         return "fail";
     }
-
     @Override
     public String checkLoginPreparedStatement(Users users) throws SQLException, ClassNotFoundException {
         Connection connection = SQLSeverConnection.getSQLServerConnection();
@@ -32,7 +30,6 @@ public class LoginDAOImpl implements loginDAO{
         preparedStatement.setString(1, users.getUserName());
         preparedStatement.setString(2,users.getPassword());
         ResultSet resultSet = preparedStatement.executeQuery();
-
         while (resultSet.next()){
             System.out.println("Login thanh cong: "+resultSet.getString("username"));
             return users.getPassword();

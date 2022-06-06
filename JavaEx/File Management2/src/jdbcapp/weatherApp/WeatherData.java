@@ -15,11 +15,15 @@ public class WeatherData {
     private String city;
     private String country;
     Gson gson = new Gson();
+
     public WeatherData(String city, String country) {
         this.city = city;
         this.country = country;
     }
-    public WeatherData(){}
+
+    public WeatherData() {
+    }
+
     public String getCity() {
         return city;
     }
@@ -41,14 +45,15 @@ public class WeatherData {
         URL url = new URL(link);
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(url.openStream()));
         String line;
-        while ((line = bufferedReader.readLine())!=null){//Đọc đến dòng cuối cùng,Gán cho line
+        while ((line = bufferedReader.readLine()) != null) {//Đọc đến dòng cuối cùng,Gán cho line
             data.append(line);//Sau mỗi vòng lặp nối line thành 1 chuỗi
         }
         return data.toString();//Trả về 1 jsonString
 
     }
-    public String getLink(){
-        String link = "https://api.openweathermap.org/data/2.5/weather?q="+city+","+country+
+
+    public String getLink() {
+        String link = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "," + country +
                 "&appid=96381a872b1b405c5bf83b2ed63d9561&units=metric";
 //        String link = "https://api.openweathermap.org/data/2.5/weather?q=hanoi,vietnam&appid=96381a872b1b405c5bf83b2ed63d9561&units=metric";
         return link;
@@ -56,7 +61,7 @@ public class WeatherData {
 
 
     public WeatherRoot weatherRootData() throws IOException {
-        WeatherRoot weatherRootData = gson.fromJson(getAPIJson(getLink()),WeatherRoot.class);
+        WeatherRoot weatherRootData = gson.fromJson(getAPIJson(getLink()), WeatherRoot.class);
         return weatherRootData;
     }
 

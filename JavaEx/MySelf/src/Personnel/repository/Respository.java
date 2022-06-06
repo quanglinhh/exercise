@@ -1,5 +1,6 @@
 package Personnel.repository;
 
+import Personnel.entity.PersonnelRoot;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
@@ -14,28 +15,21 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
 
 
 public class Respository {
-
-    public void loadFromFileJson(){
-
-        try{
-            Reader reader = new FileReader("Personnel.json");
-            Type type = new TypeToken<List<Personnel>>(){}.getType();
-
-    
-
-        }catch (FileNotFoundException e){
-            e.printStackTrace();
-        }
+    PersonnelRoot personnelRoot = new PersonnelRoot();
+    public PersonnelRoot loadFromFileJson() throws IOException {
+        Gson gson = new Gson();
+        Reader reader = Files.newBufferedReader(Paths.get("Personnel.json"));
+        personnelRoot = gson.fromJson(reader,PersonnelRoot.class);
+        reader.close();
+        return personnelRoot;
     }
 
-    public void saveToFile(List<Object> objects,int ch) throws IOException {
-
-        JSONObject object = new JSONObject();
-        object.get("Worker");
+    public void saveToFile(Object objects) throws IOException {
         String fileName = "Personnel.json";
         Path path = Paths.get(fileName);
         Writer writer = Files.newBufferedWriter(path, StandardCharsets.UTF_8);
@@ -43,13 +37,7 @@ public class Respository {
         JsonElement tree = gson.toJsonTree(objects);
         gson.toJson(tree,writer);
         writer.close();
-        System.out.println("Ghi file thanh cong");
-
-
     }
 
-    public static void main(String[] args) {
-        Respository respository = new Respository();
-        respository.loadFromFileJson();
-    }
+
 }

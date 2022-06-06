@@ -5,6 +5,7 @@ import weather.repository.SQLServerConnection;
 
 
 import java.io.IOException;
+
 import java.sql.*;
 
 public class Controller {
@@ -28,7 +29,9 @@ public class Controller {
             psTemp.setString(2,unit);
             psTemp.setInt(3,unitType);
             psTemp.executeUpdate();
-            ResultSet tempId = psTemp.getGeneratedKeys();
+
+            ResultSet temp =psTemp.getGeneratedKeys();
+            int tempId = temp.getInt(0);
 
             //Nhập dữ liệu vào bảng Weather
             String insertWeather = "INSERT INTO weather VALUES(?,?,?,?,?,?)";
@@ -38,7 +41,7 @@ public class Controller {
             psWeather.setInt(3,weatherIcon);
             psWeather.setString(4,iconPhrase);
             psWeather.setString(5,precipitationType);
-            psWeather.setInt(6,i+1);
+            psWeather.setInt(6,tempId);
             psWeather.executeUpdate();
         }
         System.out.println("Nhập dữ liệu từ API vào SQL thành công!");

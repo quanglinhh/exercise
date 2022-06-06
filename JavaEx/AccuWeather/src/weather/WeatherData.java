@@ -24,8 +24,8 @@ public class WeatherData {
         return data.toString();
     }
     public static String getLink(){
-        String link = "http://dataservice.accuweather.com/forecasts/v1/hourly/" +
-                "12hour/353412?apikey=dyCOwm4FKTSGcKrBh7HDyrp7cA5p6HUg&language=vi-vn&metric=true";
+        String link = "http://dataservice.accuweather.com/forecasts/v1/hourly" +
+                "/12hour/353412?apikey=dyCOwm4FKTSGcKrBh7HDyrp7cA5p6HUg&language=vi-vn&metric=true";
         return link;
     }
     public List<Weather> weatherRootData() throws IOException {
