@@ -16,9 +16,15 @@ namespace CodeLearn
             {
                 arr[i] = int.Parse(Console.ReadLine());
             }
-            int sum = arr[0] + arr[n - 1];
-
-            Console.WriteLine(sum);
+            int sum = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i]>0 && arr[i]% 2 != 0)
+                {
+                    sum += arr[i];
+                }
+            }
+            Console.WriteLine(sum);          
         }
     }
 }
