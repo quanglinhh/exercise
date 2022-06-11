@@ -12,18 +12,85 @@ namespace lab5._1
     {
         static void Main(string[] args)
         {
-            string connectionString =
-                "Data source = localhost; Initial Catalog= myjdbcapp;User = sa; password=as";
-            SqlConnection connection = new SqlConnection(connectionString);
-            string query = "SELECT * FROM employee";
-            SqlCommand sqlCommand = new SqlCommand(query,connection);
-            connection.Open();
-            SqlDataReader reader = sqlCommand.ExecuteReader();
-            while (reader.Read())
+            RunProgram();
+        }
+        public static void RunProgram()
+        {
+            try
             {
-                Console.WriteLine("empno: " + reader[1]+"name: " + reader[2]);
+                int choice = 0;
+                Controller controller = new Controller();
+                while (choice != 7)
+                {
+                    Menu();
+                    choice = Convert.ToInt32(Console.ReadLine());
+                    switch (choice)
+                    {
+                        case 1:
+                            controller.AddProduct();
+                            Console.WriteLine("-------------------------------");
+                            break;
+                        case 2:
+                            controller.EditProduct();
+                            Console.WriteLine("-------------------------------");
+                            break;
+                        case 3:
+                            controller.DeleteProduct();
+                            Console.WriteLine("-------------------------------");
+                            break;
+                        case 4:
+                            controller.ViewAllProducts();
+                            Console.WriteLine("-------------------------------");
+                            break;
+                        case 5:
+                            controller.SearchProductById();
+                            Console.WriteLine("-------------------------------");
+                            break;
+                        case 6:
+                            controller.SearchProductByName();
+                            Console.WriteLine("-------------------------------");
+                            break;
+                        case 7:
+                            break;
+                        default:
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("wrong syntax, please choice again!");
+                            Console.ResetColor();
+                            break;
+                    }
+                }
+                if (choice == 7)
+                {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("Exit!");
+                    Console.ReadLine();                  
+                    Environment.Exit(0);
+                }
             }
+            catch (FormatException ex)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("wrong syntax, please choice again!");
+                Console.ResetColor();
+            }
+            finally
+            {
+                RunProgram();
+            }
+            
             Console.ReadLine();
+        }
+        public static void Menu()
+        {
+            Console.WriteLine("========== Actions=========");
+            Console.WriteLine("1. Add Product");
+            Console.WriteLine("2. Edit product");
+            Console.WriteLine("3. Delete product");
+            Console.WriteLine("4. View all products");
+            Console.WriteLine("5. Search product by Id");
+            Console.WriteLine("6. Search product by name");
+            Console.WriteLine("7. End ");
+            Console.Write("Your choice: ");
         }
     }
 }
