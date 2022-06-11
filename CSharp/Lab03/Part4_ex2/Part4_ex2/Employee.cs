@@ -24,7 +24,7 @@ namespace Part4_ex2
         }
         public override string ToString()
         {
-            return "Name: "+firstName+" "+lastName+"\nAddress: "+address+"\nSin: "+sin+"\nSalary: "+salary;
+            return "Name: " + firstName + " " + lastName + "\nAddress: " + address + "\nSin: " + sin + "\nSalary: " + salary;
         }
     }
 }

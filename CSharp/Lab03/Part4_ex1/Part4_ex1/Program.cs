@@ -17,7 +17,9 @@ namespace Part4_ex1
             int number = int.Parse(Console.ReadLine());
             while (number > 10)
             {
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("number > 10, please re-enter!");
+                Console.ResetColor();
                 Console.Write("Enter the number of atom you wan to add(number <= 10): ");
                 number = int.Parse(Console.ReadLine());
             }

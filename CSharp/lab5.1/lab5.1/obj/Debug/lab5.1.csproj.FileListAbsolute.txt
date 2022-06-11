@@ -1,0 +1,8 @@
+D:\exercise\exercise\CSharp\lab5.1\lab5.1\bin\Debug\lab5.1.exe.config
+D:\exercise\exercise\CSharp\lab5.1\lab5.1\bin\Debug\lab5.1.exe
+D:\exercise\exercise\CSharp\lab5.1\lab5.1\bin\Debug\lab5.1.pdb
+D:\exercise\exercise\CSharp\lab5.1\lab5.1\obj\Debug\lab5.1.csproj.AssemblyReference.cache
+D:\exercise\exercise\CSharp\lab5.1\lab5.1\obj\Debug\lab5.1.csproj.SuggestedBindingRedirects.cache
+D:\exercise\exercise\CSharp\lab5.1\lab5.1\obj\Debug\lab5.1.csproj.CoreCompileInputs.cache
+D:\exercise\exercise\CSharp\lab5.1\lab5.1\obj\Debug\lab5.1.exe
+D:\exercise\exercise\CSharp\lab5.1\lab5.1\obj\Debug\lab5.1.pdb

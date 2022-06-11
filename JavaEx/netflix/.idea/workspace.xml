@@ -5,47 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c53eb1bf-6a74-4e89-828f-e581ffc4278a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../MySelf/src/Personnel/PersonnelApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MySelf/src/Personnel/entity/PersonnelRoot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled1/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled1/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled1/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled1/untitled1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AccuWeather/out/production/AccuWeather/weather/Controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AccuWeather/out/production/AccuWeather/weather/Controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AccuWeather/src/weather/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AccuWeather/src/weather/Controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AccuWeather/src/weather/WeatherData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AccuWeather/src/weather/WeatherData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../File Management2/out/production/File management2/jdbcapp/weatherApp/WeatherData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../File Management2/out/production/File management2/jdbcapp/weatherApp/WeatherData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../File Management2/src/jdbcapp/files/DemoJsonWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/../File Management2/src/jdbcapp/files/DemoJsonWrite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../File Management2/src/jdbcapp/mvc/model/LoginDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../File Management2/src/jdbcapp/mvc/model/LoginDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../File Management2/src/jdbcapp/weatherApp/WeatherData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../File Management2/src/jdbcapp/weatherApp/WeatherData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySelf/Personnel.json" beforeDir="false" afterPath="$PROJECT_DIR$/../MySelf/Personnel.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySelf/out/production/MySelf/Personnel/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySelf/out/production/MySelf/Personnel/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MySelf/out/production/MySelf/Personnel/controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySelf/out/production/MySelf/Personnel/entity/Worker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MySelf/out/production/MySelf/Personnel/entity/Worker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySelf/out/production/MySelf/Personnel/repository/Respository$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySelf/out/production/MySelf/Personnel/repository/Respository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MySelf/out/production/MySelf/Personnel/repository/Respository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySelf/out/production/MySelf/weather/Coord.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySelf/out/production/MySelf/weather/Weather.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySelf/out/production/MySelf/weather/WeatherApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySelf/out/production/MySelf/weather/WeatherData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySelf/out/production/MySelf/weather/WeatherRoot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySelf/src/Personnel/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySelf/src/Personnel/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MySelf/src/Personnel/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySelf/src/Personnel/entity/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MySelf/src/Personnel/entity/Worker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySelf/src/Personnel/repository/Respository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MySelf/src/Personnel/repository/Respository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySelf/src/weather/Coord.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySelf/src/weather/Weather.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySelf/src/weather/WeatherApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySelf/src/weather/WeatherData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySelf/src/weather/WeatherRoot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix/Application$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix/controller/NetflixController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix/model/Netflix.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix/repository/NetflixRespository$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix/repository/NetflixRespository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/Lab03/Part4_ex2/.vs/Part4_ex2/FileContentIndex/1bf5062d-9416-4c32-9a63-306c7fba947e.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/Lab03/Part4_ex2/.vs/Part4_ex2/FileContentIndex/f4548852-aeca-4e47-b9cc-3ad0e02f8981.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/Lab03/Part4_ex2/.vs/Part4_ex2/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSharp/Lab03/Part4_ex2/.vs/Part4_ex2/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/Lab03/Part4_ex2/Part4_ex2/Employee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSharp/Lab03/Part4_ex2/Part4_ex2/Employee.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +38,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/exercise/exercise/JavaEx/netflix",
+    "last_opened_file_path": "D:/exercise/exercise/JavaEx/java2lab5",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -149,6 +112,7 @@
       <workItem from="1654158579258" duration="207000" />
       <workItem from="1654248724383" duration="511000" />
       <workItem from="1654249454715" duration="634000" />
+      <workItem from="1654775354355" duration="31000" />
     </task>
     <servers />
   </component>

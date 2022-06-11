@@ -1,0 +1,8 @@
+D:\exercise\exercise\CSharp\Lab02\ExHandling3\bin\Debug\ExHandling3.exe.config
+D:\exercise\exercise\CSharp\Lab02\ExHandling3\bin\Debug\ExHandling3.exe
+D:\exercise\exercise\CSharp\Lab02\ExHandling3\bin\Debug\ExHandling3.pdb
+D:\exercise\exercise\CSharp\Lab02\ExHandling3\obj\Debug\ExHandling3.csproj.AssemblyReference.cache
+D:\exercise\exercise\CSharp\Lab02\ExHandling3\obj\Debug\ExHandling3.csproj.SuggestedBindingRedirects.cache
+D:\exercise\exercise\CSharp\Lab02\ExHandling3\obj\Debug\ExHandling3.csproj.CoreCompileInputs.cache
+D:\exercise\exercise\CSharp\Lab02\ExHandling3\obj\Debug\ExHandling3.exe
+D:\exercise\exercise\CSharp\Lab02\ExHandling3\obj\Debug\ExHandling3.pdb
