@@ -68,8 +68,10 @@ namespace lab5._1
 
             while (reader.Read())
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Product name: " + reader[1] + "   |  Product Desc: " + reader[2] + "   |   Price: " + reader[3]);
                 Console.WriteLine("------------------------------------------------------------");
+                Console.ResetColor();
                 
             }
 
@@ -94,7 +96,7 @@ namespace lab5._1
             connection.Open();
             cmd.ExecuteNonQuery();
             connection.Close();
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Add produc succesfull!");
             Console.ResetColor();
         }
@@ -147,7 +149,7 @@ namespace lab5._1
                     }
                     if (choice == 4)
                     {
-                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("Update product with id = {0} succesful!", id);
                         Console.ResetColor();
                         Program.RunProgram();
@@ -167,7 +169,7 @@ namespace lab5._1
             }
             else
             {
-                Console.ForegroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("Product not found!");
                 Console.ResetColor();
                 EditProduct();  
@@ -194,11 +196,13 @@ namespace lab5._1
             {
                 string query = $"DELETE FROM product WHERE id = {id}";
                 Update(query);
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Deleted product with id = {0}",id);
+                Console.ResetColor();
             }
             else
             {
-                Console.ForegroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("Product not found!");
                 Console.ResetColor();
                 DeleteProduct();
@@ -218,7 +222,7 @@ namespace lab5._1
             }
             else
             {
-                Console.ForegroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("Product not found!");
                 Console.ResetColor();
             }
@@ -237,7 +241,7 @@ namespace lab5._1
             }
             else
             {
-                Console.ForegroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("Product not found!");
                 Console.ResetColor();
                 
