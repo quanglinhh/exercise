@@ -8,7 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         StudentController controller = new StudentController();
         while (true){
-            Main.menu();
+            menu();
             int ch = scanner.nextInt();
             switch (ch){
                 case 1:

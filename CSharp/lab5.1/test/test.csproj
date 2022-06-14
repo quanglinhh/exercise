@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{571A6B4A-E022-469D-B691-F8B59C30D7EC}</ProjectGuid>
+    <ProjectGuid>{45933066-93BD-4BFB-B204-8CF86B607524}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>lab5._1</RootNamespace>
-    <AssemblyName>lab5.1</AssemblyName>
+    <RootNamespace>test</RootNamespace>
+    <AssemblyName>test</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArrayListController.cs" />
-    <Compile Include="ControllerBySQL.cs" />
-    <Compile Include="DbConnection.cs" />
-    <Compile Include="HastableController.cs" />
-    <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

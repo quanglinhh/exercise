@@ -17,10 +17,12 @@ namespace lab5._1
         }
         public static void RunProgram()
         {
+            ControllerBySQL controller = new ControllerBySQL();
+            controller.AddCollection();
             try
             {
                 int choice = 0;
-                Controller controller = new Controller();
+               
                 while (choice != 7)
                 {
                     Menu();

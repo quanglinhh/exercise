@@ -9,7 +9,7 @@ namespace Part4
 {
     internal class EmployeeManager
     {
-        EmployeeManager manager;
+        
         ArrayList employees = new ArrayList();
         public void AddEmployee()
         {
@@ -105,6 +105,7 @@ namespace Part4
                             case 4:
                                 Console.ForegroundColor = ConsoleColor.Green;
                                 Console.WriteLine("Modify {0} finished !",name);
+                                Console.ResetColor();                              
                                 Program.RunProgram();
                                 break;
                             default:
@@ -115,7 +116,7 @@ namespace Part4
                         }
                     }
                 }
-                catch (FormatException ex)
+                catch (FormatException )
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Sai cu phap, nhap lai!");
@@ -149,6 +150,8 @@ namespace Part4
             Console.WriteLine("4. finist modify");
             Console.Write("Your choice: ");
         }
+        
+
 
     }
 }

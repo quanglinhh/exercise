@@ -8,13 +8,14 @@ namespace Part4
 {
     internal class Program
     {
-       
+        
         static void Main(string[] args)
         {
             RunProgram();
         }
         public static void RunProgram()
         {
+            
             EmployeeManager manager = new EmployeeManager();
             
             try
@@ -53,7 +54,7 @@ namespace Part4
                     }
                 }
             }
-            catch (FormatException ex)
+            catch (FormatException)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Sai cu phap, nhap lai!");
