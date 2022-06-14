@@ -18,6 +18,8 @@ namespace lab5._1
         public static void RunProgram()
         {
             ControllerBySQL controller = new ControllerBySQL();
+            //ControllerByHashTable controller = new ControllerByHashTable();
+            //ControllerByArrayList controller = new ControllerByArrayList();
             controller.AddCollection();
             try
             {
