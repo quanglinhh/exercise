@@ -131,9 +131,7 @@ namespace lab5._1
                     while (choice != 4)
                     {
                         EditMenu();
-                        choice = int.Parse(Console.ReadLine());
-                        string query;
-
+                        choice = int.Parse(Console.ReadLine());                       
                         switch (choice)
                         {
                             case 1:

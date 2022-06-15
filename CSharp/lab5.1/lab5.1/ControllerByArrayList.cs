@@ -243,7 +243,6 @@ namespace lab5._1
         {
             Console.Write("Enter the id of product: ");
             int id = int.Parse(Console.ReadLine());
-            
             if (CheckConstrain(Convert.ToString(id), "id"))
             {
                 foreach(Product product in products)
@@ -268,7 +267,7 @@ namespace lab5._1
 
             Console.Write("Enter the name of product : ");
             string name = Console.ReadLine().ToLower();
-           
+            
             if (CheckConstrain(name,"name"))
             {
                 foreach(Product product in products)
@@ -287,6 +286,7 @@ namespace lab5._1
                 Console.WriteLine("Product not found!");
                 Console.ResetColor();
             }
+            
         }
      
     }

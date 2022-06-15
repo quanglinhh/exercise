@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
-using System.Data;
-using System.Threading;
 
 namespace lab5._1
+
 {
     internal class Program
     {
@@ -20,11 +18,11 @@ namespace lab5._1
             ControllerBySQL controller = new ControllerBySQL();
             //ControllerByHashTable controller = new ControllerByHashTable();
             //ControllerByArrayList controller = new ControllerByArrayList();
-            controller.AddCollection();
+            //controller.AddCollection();
             try
             {
                 int choice = 0;
-               
+
                 while (choice != 7)
                 {
                     Menu();
@@ -43,7 +41,7 @@ namespace lab5._1
                             controller.DeleteProduct();
                             Console.WriteLine("-------------------------------");
                             break;
-                        case 4:
+                        case 4:                          
                             controller.ViewAllProducts();
                             Console.WriteLine("-------------------------------");
                             break;
@@ -68,7 +66,7 @@ namespace lab5._1
                 {
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine("Exit!");
-                    Console.ReadLine();                  
+                    Console.ReadLine();
                     Environment.Exit(0);
                 }
             }
@@ -82,7 +80,7 @@ namespace lab5._1
             {
                 RunProgram();
             }
-            
+
             Console.ReadLine();
         }
         public static void Menu()

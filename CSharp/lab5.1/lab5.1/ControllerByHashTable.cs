@@ -235,7 +235,7 @@ namespace lab5._1
         {
            
             Console.Write("Enter the name of product : ");
-            string name = Console.ReadLine().ToLower();
+            string name = Console.ReadLine();
             Product product = new Product();
             foreach(DictionaryEntry pd in products)
             {
@@ -258,6 +258,7 @@ namespace lab5._1
                 Console.ResetColor();
 
             }
+            
         }
       
     }
