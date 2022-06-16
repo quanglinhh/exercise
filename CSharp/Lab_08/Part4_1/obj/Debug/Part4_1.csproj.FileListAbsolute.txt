@@ -1,0 +1,8 @@
+D:\exercise\exercise\CSharp\Lab_08\Part4_1\bin\Debug\Part4_1.exe.config
+D:\exercise\exercise\CSharp\Lab_08\Part4_1\bin\Debug\Part4_1.exe
+D:\exercise\exercise\CSharp\Lab_08\Part4_1\bin\Debug\Part4_1.pdb
+D:\exercise\exercise\CSharp\Lab_08\Part4_1\obj\Debug\Part4_1.csproj.AssemblyReference.cache
+D:\exercise\exercise\CSharp\Lab_08\Part4_1\obj\Debug\Part4_1.csproj.SuggestedBindingRedirects.cache
+D:\exercise\exercise\CSharp\Lab_08\Part4_1\obj\Debug\Part4_1.csproj.CoreCompileInputs.cache
+D:\exercise\exercise\CSharp\Lab_08\Part4_1\obj\Debug\Part4_1.exe
+D:\exercise\exercise\CSharp\Lab_08\Part4_1\obj\Debug\Part4_1.pdb

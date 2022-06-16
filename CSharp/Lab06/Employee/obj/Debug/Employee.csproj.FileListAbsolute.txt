@@ -1,0 +1,8 @@
+D:\exercise\exercise\CSharp\Lab06\Employee\bin\Debug\Employee.exe.config
+D:\exercise\exercise\CSharp\Lab06\Employee\bin\Debug\Employee.exe
+D:\exercise\exercise\CSharp\Lab06\Employee\bin\Debug\Employee.pdb
+D:\exercise\exercise\CSharp\Lab06\Employee\obj\Debug\Employee.csproj.AssemblyReference.cache
+D:\exercise\exercise\CSharp\Lab06\Employee\obj\Debug\Employee.csproj.SuggestedBindingRedirects.cache
+D:\exercise\exercise\CSharp\Lab06\Employee\obj\Debug\Employee.csproj.CoreCompileInputs.cache
+D:\exercise\exercise\CSharp\Lab06\Employee\obj\Debug\Employee.exe
+D:\exercise\exercise\CSharp\Lab06\Employee\obj\Debug\Employee.pdb

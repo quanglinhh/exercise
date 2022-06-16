@@ -8,7 +8,7 @@ namespace Part1_2
 {
     internal class Thermostat
     {
-        private float _CurrentTemperarute;
+        
         public delegate void TemperatureChangeHandler(float newTemperature);
 
         //Define the event publisher
@@ -18,7 +18,7 @@ namespace Part1_2
             get { return _OnTemperatureChange; }
             set { _OnTemperatureChange = value; }
         }
-
+        private float _CurrentTemperarute;
         public float CurrentTemperature
         {
             get { return _CurrentTemperarute; }
