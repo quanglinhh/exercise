@@ -11,10 +11,10 @@ public class SQLServerConnection {
         String database="myjdbcapp";
         String useName="sa";
         String password="as";
-
         Connection connection = getSQLServerConnection(hostName,database,instanceName,useName,password);
         return connection;
     }
+
     public static Connection getSQLServerConnection(String hostName, String databaseName,String instanceName, String userName, String password) throws ClassNotFoundException, SQLException {
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 

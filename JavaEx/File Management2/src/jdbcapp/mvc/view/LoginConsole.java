@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class LoginConsole {
     private final Scanner sc;
+
     //Step1 goi controller
     LoginController loginController = new LoginController();
     Users user = new Users();

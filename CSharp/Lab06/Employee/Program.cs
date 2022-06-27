@@ -28,7 +28,6 @@ namespace Employee
             {
                 Console.WriteLine(employee.EmployeeName);
             }
-           
             var emName = employees.Where(e => e.EmployeeName == "Bac").FirstOrDefault();
             Console.WriteLine(emName.EmployeeName);
             //Count
@@ -36,7 +35,7 @@ namespace Employee
             //Any
             var checkEmployee = employees.Any();
             Console.WriteLine(checkEmployee);
-            Console.WriteLine(employees.Length );
+            Console.WriteLine(employees.Length);
             //OrderBy
             var empOrder = employees.OrderBy(e => e.Age).ThenByDescending(e=>e.Age);
             var empOrder2 = from e in employees orderby e.Age descending select e;
