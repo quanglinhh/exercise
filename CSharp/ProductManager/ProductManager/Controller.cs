@@ -35,7 +35,6 @@ namespace ProductManager
             }       
         }
         public void DisplayProduct()
-
         {
             Console.ForegroundColor = ConsoleColor.Green;
             foreach (Product product in products)
@@ -50,13 +49,13 @@ namespace ProductManager
             string id = Console.ReadLine();
             if (CheckConstraint(id))
             {
-
-                    
-                foreach (Product product in products)
+               
+                for(int i = 0; i < products.Count; i++)
                 {
-                    if(string.Equals(product.ProductId,id))
+                    Product product = (Product)products[i];
+                    if (product.ProductId.Equals(id))
                     {
-                        products.Remove(product);
+                        products.RemoveAt(i);
                         Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("Delete product successful!");
                         Console.ResetColor();
