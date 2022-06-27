@@ -50,6 +50,8 @@ namespace ProductManager
             string id = Console.ReadLine();
             if (CheckConstraint(id))
             {
+
+                    
                 foreach (Product product in products)
                 {
                     if(string.Equals(product.ProductId,id))
@@ -60,6 +62,12 @@ namespace ProductManager
                         Console.ResetColor();
                     }
                 }
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("Product not constraint!");
+                Console.ResetColor();
             }
         }
         public bool CheckConstraint(string id)
