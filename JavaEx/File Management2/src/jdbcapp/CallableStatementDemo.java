@@ -14,6 +14,7 @@ public class CallableStatementDemo{
 //        String query = "select * from employee empid=? and name like ?";
         //CallableStatement
         String query = "{call getEmployeeInfo(?,?,?)}";//See nothing
+
         CallableStatement callableStatement = connection.prepareCall(query);
 
         //Lay ket qua ten ra
