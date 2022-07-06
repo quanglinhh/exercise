@@ -1,12 +1,27 @@
 {
   "worker": [
     {
-      "lever": 2,
+      "lever": 5,
       "name": "Linh",
+      "age": 24,
+      "gender": "nam",
+      "address": "nb"
+    },
+    {
+      "lever": 1,
+      "name": "name1",
+      "age": 30,
+      "gender": "nu",
+      "address": "HN"
+    }
+  ],
+  "engineer": [
+    {
+      "industry": "It",
+      "name": "name",
       "age": 20,
       "gender": "nam",
-      "address": "HN"
-    },
-    null
+      "address": "hn"
+    }
   ]
 }

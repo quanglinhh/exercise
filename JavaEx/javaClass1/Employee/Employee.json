@@ -1,0 +1,36 @@
+{
+  "engineers": [
+    {
+      "department": "IT",
+      "fullname": "Dao Quang Linh",
+      "age": 24,
+      "gender": "nam",
+      "address": "NB"
+    },
+    {
+      "department": "IT",
+      "fullname": "name1",
+      "age": 20,
+      "gender": "nam",
+      "address": "NG"
+    }
+  ],
+  "workers": [
+    {
+      "lever": 5,
+      "fullname": "name1",
+      "age": 30,
+      "gender": "nam",
+      "address": "KJ"
+    }
+  ],
+  "staff": [
+    {
+      "job": "Ke toan",
+      "fullname": "name2",
+      "age": 23,
+      "gender": "nu",
+      "address": "HN"
+    }
+  ]
+}
