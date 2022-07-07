@@ -7,12 +7,11 @@ public class Ex1_p3 {
     public static void main(String[] args) {
         int[] array = {1,2,3,4,5};
         //bubbleSort(array);
-        //System.out.println(Arrays.toString(array));
         //selectionSort(array);
-        //System.out.println(Arrays.toString(array));
         insertionSort(array);
         System.out.println(Arrays.toString(array));
     }
+    //Cách1
     public static void bubbleSort(int [] arr){
         for(int i = 0; i < arr.length; i++){
             for(int j = i+1; j < arr.length; j++){
@@ -26,6 +25,7 @@ public class Ex1_p3 {
         }
 
     }
+    //Cách 2
     public static void selectionSort(int[] arr){
         int maxIdx;
         for(int i = 0; i < arr.length; i++){
@@ -40,6 +40,7 @@ public class Ex1_p3 {
            }
         }
     }
+    //Cách 3
     public static void insertionSort(int[] arr){
         int i , j , key;
         for (i = 1 ; i < arr.length; i++){
