@@ -103,8 +103,6 @@ public class Ex1_p2 {
     public static void mergeB(int[] arr, int l,int m, int r ){
         int n1 = m - l+1;
         int n2 = r - m;
-
-
         ///
         int[] tempL = new int[n1];
         int[] tempR = new int[n2];
