@@ -10,13 +10,17 @@ public class DataResponde {
         this.x1 = x1;
         this.x2 = x2;
     }
-
-    public DataResponde(String msg) {
-        this.msg = msg;
-    }
     public DataResponde(){}
     public String getMsg() {
         return msg;
+    }
+
+    public float getX1() {
+        return x1;
+    }
+
+    public float getX2() {
+        return x2;
     }
 
     public void setMsg(String msg) {
