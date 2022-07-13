@@ -3,18 +3,21 @@ package com.example.springbootdemo.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name ="Product")
+@Table(name = "product")
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column()
+    @Column(nullable = false,unique = true,length = 300)
     private String productName;
+    @Column(name = "year",nullable = false)
 
     private int year;
 
+    @Column(name = "price")
     private Double price;
 
+    @Column(name = "url")
     private String url;
 
     public Product(){}

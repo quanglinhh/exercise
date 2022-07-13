@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class Database {
+
     private static final Logger logger = LoggerFactory.getLogger(Database.class);
     @Bean
     CommandLineRunner initDatabase(ProductRepository repository){
@@ -24,4 +25,6 @@ public class Database {
         };
 
     }
+
+
 }
