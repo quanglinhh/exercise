@@ -36,7 +36,7 @@ public class TblUserController {
         return ResponseEntity.ok(user);
     }
     @RequestMapping(value = "/User/{id}",method = RequestMethod.PUT)
-    public void  updateUser(@PathVariable("id") Long id,
+    public void updateUser(@PathVariable("id") Long id,
                                               @RequestBody TblUser user){
         TblUser oldYUser = tblUserService.getOne(id);
         if(oldYUser==null){
@@ -45,6 +45,7 @@ public class TblUserController {
             oldYUser.setName(user.getName());
             oldYUser.setEmail(user.getEmail());
             oldYUser.setPhone(user.getPhone());
+            tblUserService.saveUser(oldYUser);
             ResponseEntity.ok(user);
         }
     }
