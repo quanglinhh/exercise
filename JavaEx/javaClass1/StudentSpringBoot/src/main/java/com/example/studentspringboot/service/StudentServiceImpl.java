@@ -34,7 +34,6 @@ public class StudentServiceImpl implements StudentService{
 
     }
 
-
     @Override
     public Student updateStudent(Student studentUpdate, int id) {
         if(studentRepository.findById(id).isPresent()){
@@ -84,9 +83,5 @@ public class StudentServiceImpl implements StudentService{
     public Optional<Student> searchByPhone(String phone) {
         return studentRepository.findByPhone(phone);
     }
-
-
-
-
 
 }
