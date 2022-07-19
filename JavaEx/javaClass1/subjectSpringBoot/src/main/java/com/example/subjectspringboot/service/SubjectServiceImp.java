@@ -54,18 +54,15 @@ public class SubjectServiceImp implements SubjectService{
     }
 
     @Override
-    public List<Subject> findSubjectBySem() {
-        return subjectRepository.findBySem();
+    public List<Subject> findSubjectBySem(int sem) {
+        return subjectRepository.findAllBySem(sem);
     }
 
-    @Override
-    public int sumOfSubject() {
-        return subjectRepository.countAll();
-    }
+
 
     @Override
-    public int sumOfSubjectBySem() {
-        return subjectRepository.countBySem();
+    public int sumOfSubjectBySem(int sem) {
+        return subjectRepository.countBySem(sem);
     }
 
     @Override
@@ -91,5 +88,7 @@ public class SubjectServiceImp implements SubjectService{
         }
         return null;
     }
+
+
 
 }

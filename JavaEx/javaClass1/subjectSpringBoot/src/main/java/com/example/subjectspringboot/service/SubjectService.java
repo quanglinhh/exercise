@@ -17,9 +17,11 @@ public interface SubjectService {
 
     void deleteSubjectById(long id);
     Optional<Subject> findSubjectByName();
-    List<Subject> findSubjectBySem();
-    int sumOfSubject();
-    int sumOfSubjectBySem();
+    List<Subject> findSubjectBySem(int sem);
+
+    int sumOfSubjectBySem(int sem);
 
     List<Subject> findAllBy(String field, String orderByType);
+
+
 }

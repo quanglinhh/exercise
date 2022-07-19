@@ -34,7 +34,6 @@ public class Controller {
     @GetMapping("/{id}")
     public Object searchStudentById(@PathVariable("id") int id){
         Optional<Student> student = studentService.searchStudentById(id);
-        System.out.println(student);
         if(student.isEmpty()){
             return ResponseEntity.notFound();
         }
