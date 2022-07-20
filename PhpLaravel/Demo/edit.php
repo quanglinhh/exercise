@@ -20,7 +20,7 @@
 // lay id tu URL
     $id = $_GET['id'];
 // fetech du lieu theo id
-    $result = mysqli_query($mysqli,"SELECT * FROM Student WHERE id =$id");
+    $result = mysqli_query($mysqli,"SELECT * FROM Studentt WHERE id =$id");
 
     while($stu_data = mysqli_fetch_array($result)){
         $name = $stu_data['NAME'];
