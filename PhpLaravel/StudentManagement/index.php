@@ -24,7 +24,7 @@ $result = mysqli_query($mysqli,"SELECT * FROM students ORDER BY id DESC");
             echo"<td>".$student_data['mobile']."</td>";
             echo"<td>".$student_data['email']."</td>";
             echo"<td><a href='edit.php?id=$student_data[id]'>Edit</a> |
-            <a href='delete.php?id=$student_data[id]'?Delete<a></td></tr>";
+            <a href='delete.php?id=$student_data[id]'?Delete<a>Delete</td></tr>";
         }
     ?>
     </table>
