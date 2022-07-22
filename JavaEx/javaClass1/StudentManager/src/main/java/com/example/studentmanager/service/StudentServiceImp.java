@@ -1,7 +1,7 @@
-package com.example.studentspringboot.service;
+package com.example.studentmanager.service;
 
-import com.example.studentspringboot.model.TblstudentEntity;
-import com.example.studentspringboot.repository.StudentRepository;
+import com.example.studentmanager.model.TblstudentEntity;
+import com.example.studentmanager.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -9,8 +9,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+
 @Service
-public class StudentServiceImpl implements StudentService{
+public class StudentServiceImp implements StudentService{
     @Autowired
     StudentRepository studentRepository;
 
@@ -18,6 +19,8 @@ public class StudentServiceImpl implements StudentService{
     public List<TblstudentEntity> getAllStudent() {
         return studentRepository.findAll();
     }
+
+
 
     @Override
     public TblstudentEntity saveStudent(TblstudentEntity student) {
@@ -36,7 +39,7 @@ public class StudentServiceImpl implements StudentService{
 
     @Override
     public TblstudentEntity updateStudent(TblstudentEntity studentUpdate, long id) {
-        if(studentRepository.findById((int)id).isPresent()){
+        if(studentRepository.findById(id).isPresent()){
             Optional<TblstudentEntity> student = searchStudentById(id);
             studentUpdate.setId(id);
             student.stream().map(st-> {
@@ -56,12 +59,12 @@ public class StudentServiceImpl implements StudentService{
 
     @Override
     public void deleteStudent(long id) {
-        studentRepository.deleteById((int) id);
+        studentRepository.deleteById( id);
     }
 
     @Override
     public Optional<TblstudentEntity> searchStudentById(long id) {
-        return studentRepository.findById((int) id);
+        return studentRepository.findById(id);
     }
 
     @Override

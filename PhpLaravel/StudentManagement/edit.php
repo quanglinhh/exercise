@@ -51,7 +51,7 @@ while ($user_data = mysqli_fetch_array($result)) {
                 <td><input type="text" name ="mobile" value=<?php echo $mobile;?>></td>
             </tr>
             <tr>
-                <td><input type=hidden" name ="id" value=<?php echo $_GET['id'];?>></td>
+                <td><input type="hidden" name ="id" value=<?php echo $_GET['id'];?>></td>
                 <td><input type="submit" name = "update" value="Update"/></td>
             </tr>
         </table>

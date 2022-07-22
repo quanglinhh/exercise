@@ -1,5 +1,6 @@
 <?php
 //load đối tượng connection
+include_once ("search.php");
 include_once("config.php");
 global $mysqli;
 $result = mysqli_query($mysqli,"SELECT * FROM students ORDER BY id DESC");

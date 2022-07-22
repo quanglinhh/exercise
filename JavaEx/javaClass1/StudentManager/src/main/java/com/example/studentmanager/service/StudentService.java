@@ -1,13 +1,13 @@
-package com.example.studentspringboot.service;
+package com.example.studentmanager.service;
 
-import com.example.studentspringboot.model.TblstudentEntity;
+import com.example.studentmanager.model.TblstudentEntity;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface StudentService {
     List<TblstudentEntity> getAllStudent();
-     TblstudentEntity saveStudent(TblstudentEntity student);
+    TblstudentEntity saveStudent(TblstudentEntity student);
     TblstudentEntity updateStudent(TblstudentEntity studentUpdate, long id);
     void deleteStudent(long id);
     Optional<TblstudentEntity> searchStudentById(long id);

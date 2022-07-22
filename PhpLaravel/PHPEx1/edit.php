@@ -18,9 +18,9 @@ if(isset($_POST['update'])){
 ?>
 <?php
 // lay id tu URL
-$id = isset($_GET['id']);
+$id = $_GET['id'];
 // fetech du lieu theo id
-$result = mysqli_query($mysqli,"SELECT * FROM Studentt WHERE id ='$id'");
+$result = mysqli_query($mysqli,"SELECT * FROM Studentt WHERE id = $id");
 
 while($stu_data = mysqli_fetch_array($result)){
     $name = $stu_data['NAME'];
@@ -36,20 +36,20 @@ while($stu_data = mysqli_fetch_array($result)){
     <table border="1">
         <tr>
             <td>Name</td>
-            <td><input type"text" name ="name" value=<?php echo $name;?>/></td></tr>
+            <td><input type="text" name ="name" value=<?php echo $name;?>/></td></tr>
         <tr>
 
         <tr>
             <td>Email</td>
-            <td><input type"text" name ="email" value=<?php echo $email;?>/></td></tr>
+            <td><input type="text" name ="email" value=<?php echo $email;?>/></td></tr>
         <tr>
 
         <tr>
             <td>Mobile</td>
-            <td><input type"text" name ="mobile" value=<?php echo $mobile;?>/></td></tr>
+            <td><input type="text" name ="mobile" value=<?php echo $mobile;?>/></td></tr>
         <tr>
-            <td><input type"hidden" name="id" value=<?php echo $_GET['id'];?>/></td>
-            <td><input type"submit" name="update" value="update"></td>
+            <td><input type="hidden" name="id" value=<?php echo $_GET['id'];?>/></td>
+            <td><input type="submit" name="update" value="update"></td>
         </tr>
     </table>
 </form>
