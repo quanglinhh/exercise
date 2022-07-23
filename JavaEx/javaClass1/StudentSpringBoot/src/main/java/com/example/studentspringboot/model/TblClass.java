@@ -1,6 +1,9 @@
 package com.example.studentspringboot.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 import javax.persistence.*;
 import java.util.Collection;
@@ -8,7 +11,10 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "tblclass", schema = "dbo", catalog = "springboot")
-public class TblclassEntity {
+@JsonIdentityInfo(
+        generator = ObjectIdGenerators.PropertyGenerator.class,
+        property = "id")
+public class TblClass {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,8 +27,8 @@ public class TblclassEntity {
     @Column(name = "note")
     private String note;
     @OneToMany(mappedBy = "tblclassByClassid",fetch =FetchType.EAGER)
-    @JsonManagedReference
-    private Collection<TblstudentEntity> tblstudentsById;
+//    @JsonBackReference
+    private Collection<TblStudent> tblstudentsById;
 
     public long getId() {
         return id;
@@ -52,7 +58,7 @@ public class TblclassEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        TblclassEntity that = (TblclassEntity) o;
+        TblClass that = (TblClass) o;
         return id == that.id && Objects.equals(name, that.name) && Objects.equals(note, that.note);
     }
 
@@ -62,11 +68,11 @@ public class TblclassEntity {
     }
 
 
-    public Collection<TblstudentEntity> getTblstudentsById() {
+    public Collection<TblStudent> getTblstudentsById() {
         return tblstudentsById;
     }
 
-    public void setTblstudentsById(Collection<TblstudentEntity> tblstudentsById) {
+    public void setTblstudentsById(Collection<TblStudent> tblstudentsById) {
         this.tblstudentsById = tblstudentsById;
     }
 }

@@ -1,18 +1,18 @@
 package com.example.studentspringboot.repository;
 
-import com.example.studentspringboot.model.TblstudentEntity;
+import com.example.studentspringboot.model.TblStudent;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
 @Repository
-public interface StudentRepository extends JpaRepository<TblstudentEntity,Long> {
+public interface StudentRepository extends JpaRepository<TblStudent,Long> {
 
-     Optional<TblstudentEntity> findByStudentname(String name);
-     Optional<TblstudentEntity> findByEmail(String email);
-     Optional<TblstudentEntity> findByPhone(String phone);
-     Optional<TblstudentEntity> findByStudentcode(String studentcode);
+     Optional<TblStudent> findByStudentname(String name);
+     Optional<TblStudent> findByEmail(String email);
+     Optional<TblStudent> findByPhone(String phone);
+     Optional<TblStudent> findByStudentcode(String studentcode);
 
 
 

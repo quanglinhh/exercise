@@ -1,6 +1,6 @@
 package com.example.studentspringboot.controller;
 
-import com.example.studentspringboot.model.TblstudentEntity;
+import com.example.studentspringboot.model.TblStudent;
 import com.example.studentspringboot.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,23 +17,23 @@ public class StudentController {
     StudentService studentService;
 
     @GetMapping
-    public ResponseEntity<List<TblstudentEntity>> getAllStudent(){
-         List<TblstudentEntity> students=studentService.getAllStudent();
+    public ResponseEntity<List<TblStudent>> getAllStudent(){
+         List<TblStudent> students=studentService.getAllStudent();
         if(students.isEmpty()){
             return new ResponseEntity(HttpStatus.NO_CONTENT);
         }
-        return new ResponseEntity<List<TblstudentEntity>>(students,HttpStatus.OK);
+        return new ResponseEntity<List<TblStudent>>(students,HttpStatus.OK);
     }
 
     @PostMapping
-    public ResponseEntity<TblstudentEntity> saveStudent( @RequestBody TblstudentEntity student){
+    public ResponseEntity<TblStudent> saveStudent(@RequestBody TblStudent student){
         studentService.saveStudent(student);
         return ResponseEntity.ok(student);
     }
 
     @GetMapping("/{id}")
     public Object searchStudentById(@PathVariable("id") long id){
-        Optional<TblstudentEntity> student = studentService.searchStudentById(id);
+        Optional<TblStudent> student = studentService.searchStudentById(id);
         if(student.isEmpty()){
             return ResponseEntity.notFound();
         }
@@ -43,7 +43,7 @@ public class StudentController {
 
     @GetMapping("/studentcode={studentcode}")
     public Object searchStudentByStudentCode(@PathVariable("studentcode") String studentcode){
-        Optional<TblstudentEntity> student = studentService.searchByStudentCode(studentcode);
+        Optional<TblStudent> student = studentService.searchByStudentCode(studentcode);
         if(student.isEmpty()){
             return ResponseEntity.notFound();
         }
@@ -52,7 +52,7 @@ public class StudentController {
 
     @GetMapping("/email={studentEmail}")
     public Object searchStudentByStudentEmail(@PathVariable("studentEmail") String studentEmail){
-        Optional<TblstudentEntity> student = studentService.searchByEmail(studentEmail);
+        Optional<TblStudent> student = studentService.searchByEmail(studentEmail);
         if(student.isEmpty()){
             return ResponseEntity.notFound();
         }
@@ -61,7 +61,7 @@ public class StudentController {
 
     @GetMapping("/phone={phone}")
     public Object searchStudentByPhone(@PathVariable("phone") String phone){
-        Optional<TblstudentEntity> student = studentService.searchByPhone(phone);
+        Optional<TblStudent> student = studentService.searchByPhone(phone);
         if(student.isEmpty()){
             return ResponseEntity.notFound();
         }
@@ -69,8 +69,8 @@ public class StudentController {
     }
 
     @PutMapping("/{id}")
-    public TblstudentEntity updateStudent(@PathVariable("id") int id, @RequestBody TblstudentEntity studentUpdate){
-        TblstudentEntity student = studentService.updateStudent(studentUpdate,id);
+    public TblStudent updateStudent(@PathVariable("id") int id, @RequestBody TblStudent studentUpdate){
+        TblStudent student = studentService.updateStudent(studentUpdate,id);
         return student;
     }
 

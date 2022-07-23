@@ -1,18 +1,13 @@
-package com.example.studentmanager.model;
-
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-import org.springframework.stereotype.Component;
+package model;
 
 import javax.persistence.*;
 import java.util.Collection;
 import java.util.Objects;
 
 @Entity
-@Table(name = "tblclass", schema = "dbo", catalog = "springboot")
-public class TblclassEntity {
-
-    @Id
+public class Tblclass {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
     @Column(name = "id")
     private long id;
     @Basic
@@ -22,10 +17,9 @@ public class TblclassEntity {
     @Column(name = "note")
     private String note;
     @OneToMany(mappedBy = "tblclassByClassid")
-    @JsonManagedReference
-    private Collection<TblstudentEntity> tblstudentsById;
+    private Collection<Tblstudent> tblstudentsById;
     @OneToMany(mappedBy = "tblclassByClassid_0")
-    private Collection<TblstudentEntity> tblstudentsById_0;
+    private Collection<Tblstudent> tblstudentsById_0;
 
     public long getId() {
         return id;
@@ -55,8 +49,8 @@ public class TblclassEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        TblclassEntity that = (TblclassEntity) o;
-        return id == that.id && Objects.equals(name, that.name) && Objects.equals(note, that.note);
+        Tblclass tblclass = (Tblclass) o;
+        return id == tblclass.id && Objects.equals(name, tblclass.name) && Objects.equals(note, tblclass.note);
     }
 
     @Override
@@ -64,19 +58,19 @@ public class TblclassEntity {
         return Objects.hash(id, name, note);
     }
 
-    public Collection<TblstudentEntity> getTblstudentsById() {
+    public Collection<Tblstudent> getTblstudentsById() {
         return tblstudentsById;
     }
 
-    public void setTblstudentsById(Collection<TblstudentEntity> tblstudentsById) {
+    public void setTblstudentsById(Collection<Tblstudent> tblstudentsById) {
         this.tblstudentsById = tblstudentsById;
     }
 
-    public Collection<TblstudentEntity> getTblstudentsById_0() {
+    public Collection<Tblstudent> getTblstudentsById_0() {
         return tblstudentsById_0;
     }
 
-    public void setTblstudentsById_0(Collection<TblstudentEntity> tblstudentsById_0) {
+    public void setTblstudentsById_0(Collection<Tblstudent> tblstudentsById_0) {
         this.tblstudentsById_0 = tblstudentsById_0;
     }
 }

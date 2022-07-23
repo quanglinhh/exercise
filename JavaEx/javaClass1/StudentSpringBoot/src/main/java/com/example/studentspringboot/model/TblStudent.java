@@ -1,13 +1,17 @@
 package com.example.studentspringboot.model;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.*;
 
 import javax.persistence.*;
+import java.util.Collection;
 import java.util.Objects;
 
 @Entity
 @Table(name = "tblstudent", schema = "dbo", catalog = "springboot")
-public class TblstudentEntity {
+@JsonIdentityInfo(
+        generator = ObjectIdGenerators.PropertyGenerator.class,
+        property = "id")
+public class TblStudent {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,8 +37,21 @@ public class TblstudentEntity {
 //    private Long classid;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "classid", referencedColumnName = "id")
-    @JsonBackReference
-    private TblclassEntity tblclassByClassid;
+//    @JsonIgnore
+    private TblClass tblclassByClassid;
+
+
+    public Collection<TblMark> getTblmarkById() {
+        return tblmarkById;
+    }
+
+    public void setTblmarkById(Collection<TblMark> tblmarkById) {
+        this.tblmarkById = tblmarkById;
+    }
+
+    @OneToMany(mappedBy = "tblstudentByStudentid",fetch =FetchType.EAGER)
+//    @JsonBackReference
+    private Collection<TblMark> tblmarkById;
 
     public long getId() {
         return id;
@@ -96,7 +113,7 @@ public class TblstudentEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        TblstudentEntity that = (TblstudentEntity) o;
+        TblStudent that = (TblStudent) o;
         return id == that.id && Objects.equals(studentname, that.studentname) && Objects.equals(studentcode, that.studentcode) && Objects.equals(email, that.email) && Objects.equals(address, that.address) && Objects.equals(phone, that.phone) ;
     }
 
@@ -104,11 +121,11 @@ public class TblstudentEntity {
     public int hashCode() {
         return Objects.hash(id, studentname, studentcode, email, address, phone);
     }
-    public TblclassEntity getTblclassByClassid() {
+    public TblClass getTblclassByClassid() {
         return tblclassByClassid;
     }
 
-    public void setTblclassByClassid(TblclassEntity tblclassByClassid) {
+    public void setTblclassByClassid(TblClass tblclassByClassid) {
         this.tblclassByClassid = tblclassByClassid;
     }
 }

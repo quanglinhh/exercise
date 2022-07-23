@@ -1,13 +1,13 @@
 package com.example.studentspringboot.service;
 
-import com.example.studentspringboot.model.TblclassEntity;
+import com.example.studentspringboot.model.TblClass;
 
 import java.util.List;
 
 public interface ClassService {
-    List<TblclassEntity> getAllClass();
-    TblclassEntity saveClass(TblclassEntity tblclass);
-    TblclassEntity updateClass(TblclassEntity tblclass, Long id);
+    List<TblClass> getAllClass();
+    void saveClass(TblClass tblclass);
+    TblClass updateClass(TblClass tblclass, Long id);
 
     Object getClassById(long id);
     void deleteClass(long id);

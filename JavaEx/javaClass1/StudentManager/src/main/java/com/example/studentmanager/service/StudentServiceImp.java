@@ -42,6 +42,7 @@ public class StudentServiceImp implements StudentService{
         if(studentRepository.findById(id).isPresent()){
             Optional<TblstudentEntity> student = searchStudentById(id);
             studentUpdate.setId(id);
+            /*
             student.stream().map(st-> {
                 st.setId(id);
                 st.setStudentname(studentUpdate.getStudentname());
@@ -52,6 +53,8 @@ public class StudentServiceImp implements StudentService{
 
                 return st;
             });
+
+             */
         }
         return studentRepository.save(studentUpdate);
 

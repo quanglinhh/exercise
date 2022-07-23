@@ -1,6 +1,6 @@
 package com.example.studentspringboot.service;
 
-import com.example.studentspringboot.model.TblclassEntity;
+import com.example.studentspringboot.model.TblClass;
 import com.example.studentspringboot.repository.ClassRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -15,26 +15,26 @@ public class ClassServiceImp implements ClassService{
     @Autowired
     ClassRepository classRepository;
     @Override
-    public List<TblclassEntity> getAllClass() {
+    public List<TblClass> getAllClass() {
         return classRepository.findAll();
     }
 
     @Override
-    public TblclassEntity saveClass(TblclassEntity tblclass) {
-        Optional<TblclassEntity> tblClass = classRepository.findByName(tblclass.getName());
+    public void saveClass(TblClass tblclass) {
+        Optional<TblClass> tblClass = classRepository.findByName(tblclass.getName());
         if(tblClass.isPresent()){
-            return (TblclassEntity) ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED);
+            ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED);
+            return;
         }
-        return classRepository.save(tblclass);
+        classRepository.save(tblclass);
     }
 
     @Override
-    public TblclassEntity updateClass(TblclassEntity classUpdate, Long id) {
-        Optional<TblclassEntity> tblclass = classRepository.findById(id);
-        classUpdate.setId(id);
-        tblclass.stream().map(cl->{cl.setName(classUpdate.getName());
-                                   cl.setNote(classUpdate.getNote());
-                                   return cl;});
+    public TblClass updateClass(TblClass classUpdate, Long id) {
+        if(classRepository.findById(id).isPresent()){
+            classUpdate.setId(id);
+        }
+
         return classRepository.save(classUpdate);
     }
 

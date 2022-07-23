@@ -1,6 +1,6 @@
 package com.example.studentspringboot.controller;
 
-import com.example.studentspringboot.model.TblclassEntity;
+import com.example.studentspringboot.model.TblClass;
 import com.example.studentspringboot.service.ClassServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -15,18 +15,18 @@ public class ClassController {
     ClassServiceImp classServiceImp;
 
     @GetMapping
-    public List<TblclassEntity> getAllClass(){
+    public List<TblClass> getAllClass(){
         return classServiceImp.getAllClass();
     }
 
     @PostMapping
-    public ResponseEntity<TblclassEntity> insertClass(@RequestBody TblclassEntity tblclass){
+    public ResponseEntity<TblClass> insertClass(@RequestBody TblClass tblclass){
         classServiceImp.saveClass(tblclass);
         return ResponseEntity.ok(tblclass);
     }
 
     @PutMapping("/{id}")
-    public TblclassEntity updateClass(@PathVariable("id") long id,@RequestBody TblclassEntity classUpdate){
+    public TblClass updateClass(@PathVariable("id") long id, @RequestBody TblClass classUpdate){
         return classServiceImp.updateClass(classUpdate,id);
     }
     @GetMapping("/{id}")
@@ -35,7 +35,7 @@ public class ClassController {
     }
 
     @DeleteMapping("/{id}")
-    public Object deleteStudent(@PathVariable("id") long id) {
+    public Object deleteClass(@PathVariable("id") long id) {
         classServiceImp.deleteClass(id);
         return ResponseEntity.ok("Delete class id = "+id);
     }

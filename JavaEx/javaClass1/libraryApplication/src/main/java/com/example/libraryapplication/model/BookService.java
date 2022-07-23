@@ -37,10 +37,14 @@ public class BookService {
     public Book update(int id , Book newBook){
         if(bookRepository.findById(id).isPresent()){
             Optional<Book> book1 = findById(id);
+            newBook.setId(id);
+            /*
             book1.stream().map(book -> {book.setTitle(newBook.getTitle());
                                         book.setDescription(newBook.getDescription());
                                         return book;})
                           .findFirst();
+
+             */
         }
         return bookRepository.save(newBook);
     }
