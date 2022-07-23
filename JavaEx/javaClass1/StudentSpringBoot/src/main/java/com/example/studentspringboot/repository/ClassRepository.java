@@ -9,4 +9,6 @@ import java.util.Optional;
 @Repository
 public interface ClassRepository extends JpaRepository<TblclassEntity,Long> {
     Optional<TblclassEntity> findByName(String name);
+
+
 }

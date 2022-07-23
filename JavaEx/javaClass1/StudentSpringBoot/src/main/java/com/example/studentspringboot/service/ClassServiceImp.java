@@ -39,6 +39,15 @@ public class ClassServiceImp implements ClassService{
     }
 
     @Override
+    public Object getClassById(long id) {
+        if(classRepository.findById(id).isEmpty()){
+            return ResponseEntity.notFound();
+        }
+        return classRepository.findById(id);
+
+    }
+
+    @Override
     public void deleteClass(long id) {
         classRepository.deleteById(id);
     }

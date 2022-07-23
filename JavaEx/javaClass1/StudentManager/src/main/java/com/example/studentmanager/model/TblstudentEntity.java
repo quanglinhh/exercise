@@ -1,6 +1,8 @@
 package com.example.studentmanager.model;
 
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 import java.util.Objects;
 
@@ -31,8 +33,9 @@ public class TblstudentEntity {
 //    @Basic
 //    @Column(name = "classid")
 //    private Long classid;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "classid", referencedColumnName = "id")
+    @JsonBackReference
     private TblclassEntity tblclassByClassid;
 
     public long getId() {

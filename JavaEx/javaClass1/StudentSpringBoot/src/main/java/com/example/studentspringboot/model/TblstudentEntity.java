@@ -1,10 +1,12 @@
 package com.example.studentspringboot.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "tblstudent", schema = "dbo", catalog = "SpringBoot")
+@Table(name = "tblstudent", schema = "dbo", catalog = "springboot")
 public class TblstudentEntity {
 
     @Id
@@ -18,27 +20,21 @@ public class TblstudentEntity {
     @Column(name = "studentcode")
     private String studentcode;
     @Basic
-    @Column(name = "address")
-    private String address;
-    @Basic
     @Column(name = "email")
     private String email;
     @Basic
+    @Column(name = "address")
+    private String address;
+    @Basic
     @Column(name = "phone")
     private String phone;
-
-
-
-    @ManyToOne
-    @JoinColumn(name = "classid", referencedColumnName = "id")
-    private TblclassEntity tblclassByClassid;
-
-
-
-
-//    @Basic
+    //    @Basic
 //    @Column(name = "classid")
 //    private Long classid;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "classid", referencedColumnName = "id")
+    @JsonBackReference
+    private TblclassEntity tblclassByClassid;
 
     public long getId() {
         return id;
@@ -64,20 +60,20 @@ public class TblstudentEntity {
         this.studentcode = studentcode;
     }
 
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
     public String getEmail() {
         return email;
     }
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getPhone() {
@@ -88,29 +84,6 @@ public class TblstudentEntity {
         this.phone = phone;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        TblstudentEntity that = (TblstudentEntity) o;
-        return id == that.id && Objects.equals(studentname, that.studentname) && Objects.equals(studentcode, that.studentcode) && Objects.equals(address, that.address) && Objects.equals(email, that.email) && Objects.equals(phone, that.phone) ;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, studentname, studentcode, address, email, phone);
-    }
-
-    public TblclassEntity getTblclassByClassid() {
-        return tblclassByClassid;
-    }
-
-    public void setTblclassByClassid(TblclassEntity tblclassByClassid) {
-        this.tblclassByClassid = tblclassByClassid;
-    }
-
-
-
 //    public Long getClassid() {
 //        return classid;
 //    }
@@ -118,4 +91,24 @@ public class TblstudentEntity {
 //    public void setClassid(Long classid) {
 //        this.classid = classid;
 //    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        TblstudentEntity that = (TblstudentEntity) o;
+        return id == that.id && Objects.equals(studentname, that.studentname) && Objects.equals(studentcode, that.studentcode) && Objects.equals(email, that.email) && Objects.equals(address, that.address) && Objects.equals(phone, that.phone) ;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, studentname, studentcode, email, address, phone);
+    }
+    public TblclassEntity getTblclassByClassid() {
+        return tblclassByClassid;
+    }
+
+    public void setTblclassByClassid(TblclassEntity tblclassByClassid) {
+        this.tblclassByClassid = tblclassByClassid;
+    }
 }

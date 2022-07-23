@@ -1,5 +1,6 @@
 package com.example.studentmanager.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
@@ -21,6 +22,7 @@ public class TblclassEntity {
     @Column(name = "note")
     private String note;
     @OneToMany(mappedBy = "tblclassByClassid",fetch =FetchType.EAGER)
+    @JsonManagedReference
     private Collection<TblstudentEntity> tblstudentsById;
 
     public long getId() {

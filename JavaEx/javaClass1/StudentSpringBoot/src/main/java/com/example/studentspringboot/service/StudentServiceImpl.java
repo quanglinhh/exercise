@@ -36,7 +36,7 @@ public class StudentServiceImpl implements StudentService{
 
     @Override
     public TblstudentEntity updateStudent(TblstudentEntity studentUpdate, long id) {
-        if(studentRepository.findById((int)id).isPresent()){
+        if(studentRepository.findById(id).isPresent()){
             Optional<TblstudentEntity> student = searchStudentById(id);
             studentUpdate.setId(id);
             student.stream().map(st-> {
@@ -56,12 +56,12 @@ public class StudentServiceImpl implements StudentService{
 
     @Override
     public void deleteStudent(long id) {
-        studentRepository.deleteById((int) id);
+        studentRepository.deleteById(id);
     }
 
     @Override
     public Optional<TblstudentEntity> searchStudentById(long id) {
-        return studentRepository.findById((int) id);
+        return studentRepository.findById(id);
     }
 
     @Override

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
-public interface StudentRepository extends JpaRepository<TblstudentEntity,Integer> {
+public interface StudentRepository extends JpaRepository<TblstudentEntity,Long> {
 
      Optional<TblstudentEntity> findByStudentname(String name);
      Optional<TblstudentEntity> findByEmail(String email);

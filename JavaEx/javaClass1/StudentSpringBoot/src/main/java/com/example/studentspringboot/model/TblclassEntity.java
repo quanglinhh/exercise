@@ -1,11 +1,13 @@
 package com.example.studentspringboot.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 import java.util.Collection;
 import java.util.Objects;
 
 @Entity
-@Table(name = "tblclass", schema = "dbo", catalog = "SpringBoot")
+@Table(name = "tblclass", schema = "dbo", catalog = "springboot")
 public class TblclassEntity {
 
     @Id
@@ -18,11 +20,9 @@ public class TblclassEntity {
     @Basic
     @Column(name = "note")
     private String note;
-
-    @OneToMany(mappedBy = "tblclassByClassid")
+    @OneToMany(mappedBy = "tblclassByClassid",fetch =FetchType.EAGER)
+    @JsonManagedReference
     private Collection<TblstudentEntity> tblstudentsById;
-
-
 
     public long getId() {
         return id;
@@ -61,6 +61,7 @@ public class TblclassEntity {
         return Objects.hash(id, name, note);
     }
 
+
     public Collection<TblstudentEntity> getTblstudentsById() {
         return tblstudentsById;
     }
@@ -68,6 +69,4 @@ public class TblclassEntity {
     public void setTblstudentsById(Collection<TblstudentEntity> tblstudentsById) {
         this.tblstudentsById = tblstudentsById;
     }
-
-
 }

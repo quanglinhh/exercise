@@ -32,7 +32,7 @@ public class StudentController {
     }
 
     @GetMapping("/{id}")
-    public Object searchStudentById(@PathVariable("id") int id){
+    public Object searchStudentById(@PathVariable("id") long id){
         Optional<TblstudentEntity> student = studentService.searchStudentById(id);
         if(student.isEmpty()){
             return ResponseEntity.notFound();

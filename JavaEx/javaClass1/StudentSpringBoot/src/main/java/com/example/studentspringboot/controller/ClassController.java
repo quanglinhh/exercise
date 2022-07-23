@@ -29,6 +29,10 @@ public class ClassController {
     public TblclassEntity updateClass(@PathVariable("id") long id,@RequestBody TblclassEntity classUpdate){
         return classServiceImp.updateClass(classUpdate,id);
     }
+    @GetMapping("/{id}")
+    public Object getClassById(@PathVariable("id") long id){
+        return classServiceImp.getClassById(id);
+    }
 
     @DeleteMapping("/{id}")
     public Object deleteStudent(@PathVariable("id") long id) {
