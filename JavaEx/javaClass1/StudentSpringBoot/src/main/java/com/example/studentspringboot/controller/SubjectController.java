@@ -1,5 +1,6 @@
 package com.example.studentspringboot.controller;
 
+import com.example.studentspringboot.dto.TblSubjectCount;
 import com.example.studentspringboot.model.TblSubject;
 import com.example.studentspringboot.service.SubjectService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,6 +57,12 @@ public class SubjectController {
     public Object deleteSubject(@PathVariable("id") long id){
         service.deleteSubjectById(id);
         return ResponseEntity.ok("Deleted subject with id = "+ id);
+    }
+
+    @GetMapping("/countbysem")
+    public ResponseEntity<List<TblSubjectCount>> countByAllSem(){
+        List<TblSubjectCount> subjectCounts = service.countByAllSem();
+        return new ResponseEntity<List<TblSubjectCount>>(subjectCounts,HttpStatus.OK);
     }
 
 }

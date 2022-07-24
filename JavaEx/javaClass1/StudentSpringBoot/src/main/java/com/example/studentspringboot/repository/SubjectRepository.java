@@ -1,7 +1,9 @@
 package com.example.studentspringboot.repository;
 
+import com.example.studentspringboot.dto.TblSubjectCount;
 import com.example.studentspringboot.model.TblSubject;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -19,4 +21,7 @@ public interface SubjectRepository extends JpaRepository<TblSubject,Long> {
 
     int countBySem(int sem);
     List<TblSubject> findAllBySem(int sem);
+
+    @Query("SELECT new com.example.studentspringboot.dto.TblSubjectCount(s.sem, COUNT(s.name)) FROM TblSubject s GROUP BY s.sem")
+    List<TblSubjectCount> countByAllSem();
 }

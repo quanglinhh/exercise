@@ -1,5 +1,6 @@
 package com.example.studentspringboot.service;
 
+import com.example.studentspringboot.dto.TblSubjectCount;
 import com.example.studentspringboot.model.TblSubject;
 
 import java.util.List;
@@ -21,6 +22,8 @@ public interface SubjectService {
     int sumOfSubjectBySem(int sem);
 
     List<TblSubject> findAllBy(String field, String orderByType);
+
+    List<TblSubjectCount> countByAllSem();
 
 
 }

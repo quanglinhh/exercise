@@ -1,5 +1,6 @@
 package com.example.studentspringboot.service;
 
+import com.example.studentspringboot.dto.TblSubjectCount;
 import com.example.studentspringboot.model.TblSubject;
 import com.example.studentspringboot.repository.SubjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -90,6 +91,10 @@ public class SubjectServiceImp implements SubjectService{
         return null;
     }
 
+    @Override
+    public List<TblSubjectCount> countByAllSem() {
+        return subjectRepository.countByAllSem();
+    }
 
 
 }

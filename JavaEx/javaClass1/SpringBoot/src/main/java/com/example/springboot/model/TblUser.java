@@ -1,6 +1,10 @@
 package com.example.springboot.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
 
 @Entity
 @Table(name ="Tbluser")
@@ -8,9 +12,14 @@ public class TblUser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+//    @Min(value = 10, message = "name can not be less than 10 character")
+//    @Max(value = 50, message = "name can not be greater than 50 character")
     @Column(name="uname")
+    @NotBlank(message = "Name is mandatory")
     private String name;
     @Column(name="email")
+    @NotEmpty
     private String email;
     @Column(name="phone")
     private String phone;
@@ -58,13 +67,5 @@ public class TblUser {
         this.phone = phone;
     }
 
-    @Override
-    public String toString() {
-        return "TblUser{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", phone='" + phone + '\'' +
-                '}';
-    }
+
 }
