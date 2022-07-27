@@ -1,5 +1,6 @@
 package com.example.springboot.controller;
 
+import com.example.springboot.controller.dto.ListUser;
 import com.example.springboot.model.TblUser;
 import com.example.springboot.service.TblUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -59,6 +60,15 @@ public class TblUserController {
                 tblUserService.deleteUser(id);
             }
 
-        }
+    }
+    //localhost:9090/lsUser
+    @RequestMapping(value="/lsUser",method = RequestMethod.GET)
+    public ResponseEntity<ListUser> listUser(){
+        List<TblUser> listUser = tblUserService.getAllUser();
+        ListUser ls = new ListUser();
+        ls.setData(listUser);
+        return new ResponseEntity<>(ls,HttpStatus.OK);
+
+    }
 
 }

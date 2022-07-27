@@ -17,8 +17,9 @@ public class TblUserServiceImpl implements TblUserService{
     }
 
     @Override
-    public void saveUser(TblUser user) {
+    public TblUser saveUser(TblUser user) {
         tblUserRepository.save(user);
+        return user;
     }
 
     @Override
