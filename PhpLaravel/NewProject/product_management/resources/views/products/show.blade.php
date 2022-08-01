@@ -29,7 +29,12 @@
                         {{ $product->product_qty }}
                     </div>
                 </div>
-
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>Category Id: </strong>
+                        {{ $product->category_id }}
+                    </div>
+                </div>
 
             </div>
         </div>

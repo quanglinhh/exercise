@@ -46,6 +46,7 @@ class ProductController extends Controller
             'product_name'=> 'required',
             'product_desc'=> 'required',
             'product_qty'=> 'required',
+            'category_id'=> 'required',
 
         ]);
 
@@ -91,6 +92,7 @@ class ProductController extends Controller
             'product_name'=> 'required',
             'product_desc'=> 'required',
             'product_qty'=> 'required',
+            'category_id'=> 'required',
 
         ]);
 
@@ -109,6 +111,6 @@ class ProductController extends Controller
     {
         //
         $product->delete();
-        return redirect()->route('products.index')->with('success','Created Successfully.');
+        return redirect()->route('products.index')->with('success','Deleted Successfully.');
     }
 }

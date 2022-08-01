@@ -1,11 +1,11 @@
-@extends('products.layout')
+@extends('categories.layout')
 @section('content')
    <div class="row">
        <div class="col-lg-12">
-           <h2 class="text-center">Product Management</h2>
+           <h2 class="text-center">Categoty Management</h2>
        </div>
        <div class="col-lg-12 text-center" style="margin-top: 10px;margin-bottom: 10px;">
-           <a class="btn btn-success" href="{{ route('products.create') }}">Add Product</a>
+           <a class="btn btn-success" href="{{ route('categories.create') }}">Add Category</a>
        </div>
    </div>
    @if ($message = Session::get('success'))
@@ -14,30 +14,24 @@
       </div>
    @endif
 
-   @if(sizeof($products) > 0)
+   @if(sizeof($categories) > 0)
       <table class="table table-bordered">
           <tr>
               <th>No</th>
-              <th>Product Name</th>
-              <th>Product Description</th>
-              <th>Qty.</th>
-              <th>Category id</th>
+              <th>Category Name</th>
               <th width="280px">More</th>
           </tr>
-          @foreach ($products as $product)
+          @foreach ($categories as $category)
               <tr>
                   <td>{{ ++$i }}</td>
-                  <td>{{ $product->product_name }}</td>
-                  <td>{{ $product->product_desc }}</td>
-                  <td>{{ $product->product_qty }}</td>
-                  <td>{{ $product->category_id}}</td>
+                  <td>{{ $category->category_name }}</td>
                   <td>
-                      <form action="{{ route('products.destroy',$product->id) }}"
+                      <form action="{{ route('categories.destroy',$category->id) }}"
                             method="POST">
                           <a class="btn btn-info"
-                             href="{{ route('products.show',$product->id) }}">Show</a>
+                             href="{{ route('categories.show',$category->id) }}">Show</a>
                           <a class="btn btn-primary"
-                          href="{{ route('products.edit',$product->id) }}">Edit</a>
+                          href="{{ route('categories.edit',$category->id) }}">Edit</a>
                           @csrf
                           @method('DELETE')
                           <button type="submit" class="btn btn-danger">Delete</button>
@@ -48,10 +42,10 @@
           @endforeach
       </table>
       <div class="col-lg-12 text-center" style="margin-top: 10px;margin-bottom: 10px;">
-           <a class="btn btn-success" href="{{ route('categories.index') }}">Category</a>
+           <a class="btn btn-success" href="{{ route('products.index') }}">Product</a>
        </div>
    @else
      <div class="alert alert-alert">Start Adding to the Database.</div>
    @endif
-   {!! $products->links() !!}
+   {!! $categories->links() !!}
 @endsection

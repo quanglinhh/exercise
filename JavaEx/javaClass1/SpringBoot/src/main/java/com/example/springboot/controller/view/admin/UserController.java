@@ -26,8 +26,8 @@ public class UserController {
     @GetMapping("/addUser")
     public String addUser(Model model){
         TblUser user = new TblUser();
-        user.setEmail("new name");
-        user.setName("new email");
+        user.setEmail("enter email");
+        user.setName("new name");
         model.addAttribute("user",userService.saveUser(user));
         return "addUser";
     }
@@ -36,13 +36,13 @@ public class UserController {
             userService.saveUser(user);
         return "redirect:/admin/userlist";
     }
-    @GetMapping("/showUpdateForm")
+    @GetMapping("showUpdateForm")
     public String updateUser(Model model, @RequestParam Long userId){
         TblUser user = userService.findUserById(userId).get();
         model.addAttribute("user",user);
         return "addUser";
     }
-    @GetMapping("/deleteUser")
+    @GetMapping("deleteUser")
     public String deleteUser( @RequestParam Long userId){
         userService.deleteUser(userId);
         return "redirect:/admin/userlist";
