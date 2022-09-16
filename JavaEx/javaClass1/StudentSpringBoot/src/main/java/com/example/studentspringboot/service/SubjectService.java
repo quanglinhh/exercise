@@ -26,4 +26,6 @@ public interface SubjectService {
     List<TblSubjectCount> countByAllSem();
 
 
+
+
 }

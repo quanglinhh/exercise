@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--========== CSS ==========-->
+    <!--    <link rel="stylesheet" href="../../static/css/layout.styles.css">-->
+    <link th:href="@{/css/layout.styles.css}" rel="stylesheet" type="text/css">
+
+    <title>Responsive sidebar submenus</title>
+</head>
+
+<body data-layout-config="{&quot;leftSideBarTheme&quot;:&quot;dark&quot;,&quot;layoutBoxed&quot;:false, &quot;leftSidebarCondensed&quot;:false, &quot;leftSidebarScrollable&quot;:false,&quot;darkMode&quot;:false, &quot;showRightSidebarOnStart&quot;: true}">
+<!--========== HEADER ==========-->
+
+
+<div class="nav" id="navbar">
+    <nav class="nav__container">
+        <div style="margin-left: 24px">
+            <a href="#" class="nav__link nav__logo">
+                <i class='bx bxs-disc nav__icon'></i>
+                <span class="nav__logo-name">TripleDot</span>
+            </a>
+
+            <div class="nav__list">
+                <div class="nav__items">
+                    <h3 class="nav__subtitle">Profile</h3>
+
+                    <a  class="nav__link active">
+                        <i class='bx bx-home nav__icon'></i>
+                        <span class="nav__name">Home</span>
+                    </a>
+
+                    <div class="nav__dropdown">
+                        <a th:href="@{/admin/list/user}"  class="nav__link">
+                            <i class='bx bx-user nav__icon'></i>
+                            <span class="nav__name">List User</span>
+                        </a>
+                        <div class="nav__dropdown-collapse">
+                            <div class="nav__dropdown-content">
+
+                            </div>
+                        </div>
+                    </div>
+                    <a th:href="@{/admin/list/room}"  class="nav__link">
+                        <i class='bx bx-menu nav__icon'></i>
+                        <span class="nav__name">List room</span>
+                    </a>
+                    <a th:href="@{/admin/list/contract}"  class="nav__link">
+                        <i class='bx bx-book-content nav__icon'></i>
+                        <span class="nav__name">List contract</span>
+                    </a>
+
+
+
+                    <a  th:href="@{/userInfo(userId=${currentUserId})}" class="nav__link">
+                        <i class='bx bx-arrow-back nav__icon' ></i>
+                        <span class="nav__name">Back</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <a style="margin-left: 22px"  class="nav__link nav__logout">
+            <i class='bx bx-log-out nav__icon'></i>
+            <span class="nav__name">Log Out</span>
+        </a>
+    </nav>
+</div>
+
+<div layout:fragment="content">
+
+</div>
+<script src="../../static/js/main.js"></script>
+</body>
+
+<div layout:fragment="script">
+
+</div>
+
+</html>

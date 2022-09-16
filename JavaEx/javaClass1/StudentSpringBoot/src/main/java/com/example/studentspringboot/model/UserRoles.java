@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "user_roles", schema = "dbo", catalog = "SpringBoot")
+@Table(name = "user_roles", schema = "dbo", catalog = "springboot")
 public class UserRoles {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id

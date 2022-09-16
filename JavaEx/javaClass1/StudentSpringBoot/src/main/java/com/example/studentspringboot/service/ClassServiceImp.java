@@ -20,13 +20,18 @@ public class ClassServiceImp implements ClassService{
     }
 
     @Override
-    public void saveClass(TblClass tblclass) {
+    public void addClass(TblClass tblclass) {
         Optional<TblClass> tblClass = classRepository.findByName(tblclass.getName());
         if(tblClass.isPresent()){
             ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED);
             return;
         }
         classRepository.save(tblclass);
+    }
+
+    @Override
+    public TblClass saveClass(TblClass tblclass) {
+       return classRepository.save(tblclass);
     }
 
     @Override
@@ -39,10 +44,7 @@ public class ClassServiceImp implements ClassService{
     }
 
     @Override
-    public Object getClassById(long id) {
-        if(classRepository.findById(id).isEmpty()){
-            return ResponseEntity.notFound();
-        }
+    public  Optional<TblClass> getClassById(long id) {
         return classRepository.findById(id);
 
     }

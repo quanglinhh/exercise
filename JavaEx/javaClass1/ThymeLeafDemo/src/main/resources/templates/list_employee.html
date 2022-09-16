@@ -1,9 +1,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
     <head>
-        <title>List Employees</title>
-<!--        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.12.1/datatables.min.css"/>-->
-<!--        //cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css-->
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"/>
+        <title>Employee</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.css"/>
         <link rel="stylesheet"
               href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
               integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
@@ -15,6 +13,13 @@
         </style>
     </head>
     <body>
+        <div class="header">
+            <div class="sidebar table ">
+                <a href="" class="btn btn-info">Student</a>
+                <a href="" class="btn btn-info">Class</a>
+                <a href="" class="btn btn-info">Subject</a>
+            </div>
+        </div>
         <div class="container" >
             <div class="fix">
                 <h2>List Employees</h2>
@@ -22,32 +27,73 @@
                 <a th:href="@{/addEmployeeForm}" class="btn btn-primary mb-2">Add Employees</a>
                 <table class="table table-bordered table-striped " id="employee-table" >
                     <thead>
+                    <th>Avatar</th>
                     <th>Name</th>
                     <th>Email</th>
                     <th>Department</th>
-                    <th>Action</th>
+                    <th>Update</th>
+                    <th>Delete</th>
                     </thead>
-                    <tbody>
-                    <tr th:each="employee: ${employees}">
-                        <td th:text="${employee.name}"></td>
-                        <td th:text="${employee.email}"></td>
-                        <td th:text="${employee.department}"></td>
-                        <td>
-                            <a th:href="@{/showUpdateForm(employeeId=${employee.id})}" class="btn btn-info">Update</a>
-                            <a th:href="@{/deleteEmployee(employeeId=${employee.id})}" class="btn btn-danger ml-2">Delete</a>
-                        </td>
-                    </tr>
-                    </tbody>
+
+<!--                    <tr th:each="employee: ${employees}">-->
+<!--                        <td th:text="${employee.name}"></td>-->
+<!--                        <td th:text="${employee.email}"></td>-->
+<!--                        <td th:text="${employee.department}"></td>-->
+<!--                        <td><img th:src="${employee.avatar}" style="width: 60px; height: 60px;object-fit: cover;"></td>-->
+<!--                        <td>-->
+<!--                            <a th:href="@{/showUpdateForm(employeeId=${employee.id})}" class="btn btn-info">Update</a>-->
+<!--                            <a th:href="@{/deleteEmployee(employeeId=${employee.id})}" class="btn btn-danger ml-2">Delete</a>-->
+<!--                        </td>-->
+<!--                    </tr>-->
+
                 </table>
             </div>
 
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.12.1/datatables.min.js"></script>
-        <script>
+        <script type="text/javascript">
             $(document).ready(function (){
-                $("#employee-table").DataTable();
+                $("#employee-table").DataTable({
+                    "ajax": '../api/employees',
+                    columns:[
+                        {
+                            "data": "avatar",
+                            "render": function (data, type) {
+                                if (type === 'display') {
+                                    data = '<img src = "' + data + '" style="width: 60px; height: 60px;object-fit: cover;">';
+                                }
+                                return data;
+                            }
+                        },
+                        {data: "name"},
+                        {data: "email"},
+                        {data: "department"},
+                        {
+                            "data": "id",
+                            "render": function (data, type) {
+                                if (type === 'display') {
+                                    data = '<a href="/showUpdateForm?employeeId=' + data + '"  class="btn btn-info" > EDIT</a>';
+                                }
+                                return data;
+                            }
+                        },
+                        {
+                            "data": "id",
+                            "render": function (data, type) {
+                                if (type === 'display') {
+                                    data = '<a href="/deleteEmployee?employeeId=' + data + '"  class="btn btn-danger" >DELETE</a>';
+                                }
+                                return data;
+                            }
+                        }
+                    ]
+
+
+                });
             })
+
+
         </script>
     </body>
 

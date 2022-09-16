@@ -21,7 +21,7 @@ public class Employee {
     private String name;
     private String email;
     private String department;
-
+    private String avatar;
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

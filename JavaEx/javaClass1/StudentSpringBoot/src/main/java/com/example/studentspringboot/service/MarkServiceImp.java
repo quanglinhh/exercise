@@ -28,18 +28,12 @@ public class MarkServiceImp implements MarkService{
 
     @Override
     public TblMark updateMark(TblMark markUpdate, Long id) {
-        TblMark mark = markRepository.findById(id).get();
         markUpdate.setId(id);
-        mark.setMark(markUpdate.getMark());
-        mark.setNote(mark.getNote());
         return markUpdate;
     }
 
     @Override
-    public Object getMarkById(long id) {
-        if(markRepository.findById(id).isEmpty()){
-            return ResponseEntity.notFound();
-        }
+    public Optional<TblMark> getMarkById(long id) {
         return markRepository.findById(id);
     }
 

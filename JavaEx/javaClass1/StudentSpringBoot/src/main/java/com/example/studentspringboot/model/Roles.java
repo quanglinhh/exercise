@@ -2,6 +2,7 @@ package com.example.studentspringboot.model;
 
 import javax.persistence.*;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 public class Roles {
@@ -12,6 +13,17 @@ public class Roles {
     @Basic
     @Column(name = "name")
     private String name;
+
+    @ManyToMany(mappedBy = "roles")
+    private Set<Users> users;
+
+    public Set<Users> getUsers() {
+        return users;
+    }
+
+    public void setUsers(Set<Users> users) {
+        this.users = users;
+    }
 
     public Long getId() {
         return id;

@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<!--      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"-->
+<!--      layout:decorate="~{layout/indexx}"-->
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>eCommerce Product Detail</title>
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/css/productDetail/roomDetail.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 800px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .room_content{
+            margin-bottom: 10px;
+        }
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 100px) {
+            .prev, .next,.text {font-size: 11px}
+        }
+    </style>
+
+</head>
+
+<body >
+<!--layout:fragment="content"-->
+<div class="container">
+    <div class="card" style="margin-top: 200px">
+        <div class="container-fliud">
+            <div class="wrapper row">
+                <div class="preview col-md-6">
+                    <div class="preview-pic tab-content">
+                        <div class="tab-pane active" >
+                            <div class="slideshow-container">
+                                <div class="mySlides fade tab-pane" id="pic-1">
+                                    <img th:src="@{'/images/getimage/'+ ${room.images}}"  style="width:100%">
+                                </div>
+                                <div class="mySlides fade tab-pane" id="pic-2">
+                                    <img src="" style="width:100%">
+                                </div>
+                                <div class="mySlides fade tab-pane" id="pic-3">
+                                    <img style="width:100%">
+                                </div>
+                                <a class="prev" onclick="plusSlides(-1)">&lang;</a>
+                                <a class="next" onclick="plusSlides(1)">&rang;</a>
+                            </div>
+                        </div>
+                            <br>
+                    </div>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                    <ul class="preview-thumbnail nav nav-tabs">
+<!--                        <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>-->
+<!--                        <li><a data-target="#pic-2" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>-->
+<!--                        <li><a data-target="#pic-3" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>-->
+<!--                        <li><a data-target="#pic-4" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>-->
+<!--                        <li><a data-target="#pic-5" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>-->
+                    </ul>
+                </div>
+                <div class="details col-md-6" th:object="${room}">
+                    <div >
+                        <h3 class="product-title" th:text="'Phòng trọ ' + *{address}"></h3>
+                    </div>
+
+<!--                    <div class="rating">-->
+<!--                        <div class="stars">-->
+<!--                            <span class="fa fa-star checked"></span>-->
+<!--                            <span class="fa fa-star checked"></span>-->
+<!--                            <span class="fa fa-star checked"></span>-->
+<!--                            <span class="fa fa-star"></span>-->
+<!--                            <span class="fa fa-star"></span>-->
+<!--                        </div>-->
+<!--                        <span class="review-no">41 reviews</span>-->
+<!--                    </div>-->
+                        <div class="room_content" >
+                            <strong>Người đăng:</strong>
+                            <span th:text="*{usersByUserId.fullname}"></span>
+                        </div >
+                        <div>
+                            <strong>SĐT: </strong>
+                            <span th:text="*{usersByUserId.phone}"></span>
+                        </div>
+                    <div >
+                        <div class="room_content">
+                            <strong>Address:</strong>
+                            <span th:text="*{address}"></span>
+                        </div >
+                        <div class="room_content">
+                            <strong>Diện tích:</strong>
+                            <span th:text="*{area} + ' m2'"></span>
+                        </div>
+                        <div class="room_content">
+                            <strong>Giá thuê:</strong>
+                            <span th:text="*{price} +' triệu/tháng'"></span>
+                        </div>
+                        <div class="room_content">
+                            <strong>Trạng thái:</strong>
+                            <span th:text="*{statusByStatusId.name}"></span>
+                        </div>
+                    </div>
+
+                    <div class="room_content">
+                        <strong>Nội dung:</strong>
+                        <p class="product-description" th:text="*{postContent}"></p>
+                    </div>
+<!--                    <h4 class="price">current price: <span>$180</span></h4>-->
+<!--                    <p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>-->
+                    <div class="room_content">
+                        <button class="add-to-cart btn btn-info" type="button">Liên hệ qua Zalo</button>
+                        <a th:href="@{'/addContract/user/'+${currentUserId}(roomId=${room.id})}" class="btn btn-info">Liên hệ đặt phòng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+</html>

@@ -19,8 +19,11 @@ public class TblMark {
     @Column(name = "id")
     private long id;
     @Basic
-    @Column(name = "mark")
-    private Double mark;
+    @Column(name = "Written")
+    private Double written;
+    @Basic
+    @Column(name = "Practical")
+    private Double practical;
     @Basic
     @Column(name = "note")
     private String note;
@@ -45,14 +48,6 @@ public class TblMark {
 
     public void setId(long id) {
         this.id = id;
-    }
-
-    public Double getMark() {
-        return mark;
-    }
-
-    public void setMark(Double mark) {
-        this.mark = mark;
     }
 
     public String getNote() {
@@ -84,12 +79,12 @@ public class TblMark {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         TblMark that = (TblMark) o;
-        return id == that.id && Objects.equals(mark, that.mark) && Objects.equals(note, that.note);
+        return id == that.id && Objects.equals(written, that.written) && Objects.equals(note, that.note) &&Objects.equals(practical, that.practical);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, mark, note);
+        return Objects.hash(id, written, practical, note);
     }
 
     public TblStudent getTblstudentByStudentid() {
@@ -106,5 +101,21 @@ public class TblMark {
 
     public void setTblsubjectBySubjectid(TblSubject tblsubjectBySubjectid) {
         this.tblsubjectBySubjectid = tblsubjectBySubjectid;
+    }
+
+    public Double getWritten() {
+        return written;
+    }
+
+    public void setWritten(Double written) {
+        this.written = written;
+    }
+
+    public Double getPractical() {
+        return practical;
+    }
+
+    public void setPractical(Double practical) {
+        this.practical = practical;
     }
 }

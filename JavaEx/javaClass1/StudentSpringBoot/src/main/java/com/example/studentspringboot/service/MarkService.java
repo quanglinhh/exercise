@@ -5,6 +5,7 @@ import com.example.studentspringboot.model.TblMark;
 
 
 import java.util.List;
+import java.util.Optional;
 
 public interface MarkService {
     List<TblMark> getAllMark();
@@ -12,6 +13,6 @@ public interface MarkService {
     TblMark saveMark(TblMark mark);
     TblMark updateMark(TblMark mark, Long id);
 
-    Object getMarkById(long id);
+    Optional<TblMark> getMarkById(long id);
     void deleteMark(long id);
 }

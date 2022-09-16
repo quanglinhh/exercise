@@ -5,10 +5,248 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c53eb1bf-6a74-4e89-828f-e581ffc4278a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../CSharp/Lab03/Part4_ex2/.vs/Part4_ex2/FileContentIndex/1bf5062d-9416-4c32-9a63-306c7fba947e.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CSharp/Lab03/Part4_ex2/.vs/Part4_ex2/FileContentIndex/f4548852-aeca-4e47-b9cc-3ad0e02f8981.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CSharp/Lab03/Part4_ex2/.vs/Part4_ex2/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSharp/Lab03/Part4_ex2/.vs/Part4_ex2/v17/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CSharp/Lab03/Part4_ex2/Part4_ex2/Employee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../CSharp/Lab03/Part4_ex2/Part4_ex2/Employee.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/common/Constaints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/config/FileStorageProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/UserRoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/dto/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/payload/ForexRespondse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/payload/RegisterUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/payload/UploadFileResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/view/admin/ClassController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/view/admin/MarkController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/view/admin/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/view/admin/SubjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/repository/UserRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/service/FileStorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/service/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/service/UserRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/service/UserServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/service/UserServicesImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/resources/templates/addAndUpdateClass.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/resources/templates/addAndUpdateMark.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/resources/templates/addAndUpdateStudent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/resources/templates/addAndUpdateSubject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/resources/templates/admin_layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/resources/templates/admin_user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/resources/templates/class.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/resources/templates/fragments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/resources/templates/marks.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/resources/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/resources/templates/students.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/resources/templates/subjects.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/ThymeLeafDemo/src/main/java/com/example/thymeleafdemo/controller/EmployeeApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/common/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/controller/api/ImageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/controller/api/RoomController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/controller/api/StatusController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/controller/api/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/controller/imageUploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/controller/payload/RegisterUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/controller/view/ContractControllerView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/controller/view/ContractDemoControllerView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/controller/view/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/controller/view/RoomControllerView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/controller/view/RootController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/controller/view/SecurityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/controller/view/UserControllerView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/controller/view/admin/ContractAdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/controller/view/admin/PostAdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/controller/view/admin/UserAdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/dto/PostCommit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/model/Contract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/model/ContractDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/model/Images.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/model/Roles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/model/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/model/RoomImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/model/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/model/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/model/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/repository/ContractDemoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/repository/ContractRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/repository/ImagesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/repository/RoomImageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/repository/RoomRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/repository/StatusRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/repository/UserRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/security/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/security/service/UserDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/security/service/UserDetailsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/service/ContractDemoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/service/ContractDemoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/service/ContractService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/service/ContractServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/service/ImageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/service/ImageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/service/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/service/RoomImageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/service/RoomImageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/service/RoomService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/service/RoomServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/service/StatusService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/service/StatusServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/service/UserRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/service/UserRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/java/com/example/rent/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/contactform/Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/contactform/contactform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/css/scss-files.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/about-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/author-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/author-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/mini-testimonial-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/mini-testimonial-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/plan2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/post-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/post-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/post-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/post-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/post-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/post-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/post-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/post-single-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/post-single-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/property-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/property-10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/property-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/property-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/property-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/property-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/property-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/property-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/property-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/property-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/slide-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/slide-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/slide-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/slide-about-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/testimonial-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/img/testimonial-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/animate/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/animate/animate.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/easing/easing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/easing/easing.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/ionicons/css/ionicons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/ionicons/css/ionicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/ionicons/fonts/ionicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/ionicons/fonts/ionicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/ionicons/fonts/ionicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/ionicons/fonts/ionicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/ionicons/fonts/ionicons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/jquery/jquery-migrate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/owlcarousel/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/owlcarousel/assets/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/owlcarousel/assets/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/owlcarousel/assets/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/owlcarousel/assets/owl.theme.default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/owlcarousel/assets/owl.theme.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/owlcarousel/assets/owl.theme.green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/owlcarousel/assets/owl.theme.green.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/owlcarousel/assets/owl.video.play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/owlcarousel/owl.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/owlcarousel/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/popper/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/popper/popper.min.js.map.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/scrollreveal/scrollreveal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/FES/lib/scrollreveal/scrollreveal.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/css/ajaxui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/css/app-creative.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/css/forms.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/css/icons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/css/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/css/layout.styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/css/productDetail/roomDetail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/images/backgr_login.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/uploads/room1_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/uploads/room2_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/static/uploads/room3_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/403.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/admin/adminLayout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/admin/listContract.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/admin/listPost.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/admin/listUser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/contract/contractDemos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/contract/contracts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/contract/editContract.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/homes/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/homes/agent-single.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/homes/agents-grid.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/homes/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/homes/fragments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/homes/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/homes/property-grid.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/homes/property-single.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/layout/indexx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/post/PostMenu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/rooms/addRoomForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/rooms/roomDetail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/rooms/rooms.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/searchresult.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/singleitem.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/user/editUser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaClass1/rent/src/main/resources/templates/user/userInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/StudentSpringBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/StudentSpringBootApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/ClassController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/TblClassController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/MarkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/TblMarkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/TblStudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/SubjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/TblSubjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/TblUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/TblUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/ValidationHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/ValidationHandle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/view/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/controller/view/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/model/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/model/Roles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/model/TblClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/model/TblClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/model/TblMark.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/model/TblMark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/model/TblStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/model/TblStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/model/UserRoles.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/model/UserRoles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/model/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/model/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/repository/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/security/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/security/service/UserDetailsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/security/service/UserDetailsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/service/ClassService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/service/ClassService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/service/ClassServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/service/ClassServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/service/MarkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/service/MarkService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/service/MarkServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/service/MarkServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/service/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/service/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/service/SubjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/java/com/example/studentspringboot/service/SubjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/resources/templates/listUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/resources/templates/listUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/StudentSpringBoot/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/ThymeLeafDemo/src/main/java/com/example/thymeleafdemo/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/ThymeLeafDemo/src/main/java/com/example/thymeleafdemo/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/ThymeLeafDemo/src/main/java/com/example/thymeleafdemo/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/ThymeLeafDemo/src/main/java/com/example/thymeleafdemo/model/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/ThymeLeafDemo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/ThymeLeafDemo/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/ThymeLeafDemo/src/main/resources/templates/add-employee-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/ThymeLeafDemo/src/main/resources/templates/add-employee-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaClass1/ThymeLeafDemo/src/main/resources/templates/list_employee.html" beforeDir="false" afterPath="$PROJECT_DIR$/../javaClass1/ThymeLeafDemo/src/main/resources/templates/list_employee.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +276,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/exercise/exercise/JavaEx/java2lab5",
+    "last_opened_file_path": "D:/exercise/exercise/JavaEx/AccuWeather",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -113,6 +351,7 @@
       <workItem from="1654248724383" duration="511000" />
       <workItem from="1654249454715" duration="634000" />
       <workItem from="1654775354355" duration="31000" />
+      <workItem from="1661398303223" duration="23000" />
     </task>
     <servers />
   </component>

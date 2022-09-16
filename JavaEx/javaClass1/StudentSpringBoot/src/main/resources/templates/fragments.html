@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head th:fragment="html_head">
+    <title>List Employees</title>
+    <meta name="jwt" id="jwt" th:content='${jwt}'>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+          crossorigin="anonymous" />
+    <style>
+        .form-inline{
+            display: unset;
+        }
+        .input:required {
+            border-color: #800000;
+            border-width: 3px;
+        }
+        input:required:invalid {
+            border-color: #c00000;
+        }
+    </style>
+</head>
+<body>
+ <header th:fragment="header">
+     <div class="sidebar table ">
+         <a th:href="@{/student/list}" class="btn btn-info">Student</a>
+         <a th:href="@{/class/list}" class="btn btn-info">Class</a>
+         <a th:href="@{/subject/list}" class="btn btn-info">Subject</a>
+         <a th:href="@{/mark/list}" class="btn btn-info">Mark</a>
+     </div>
+ </header>
+</body>
+
+</html>

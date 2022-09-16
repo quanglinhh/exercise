@@ -16,21 +16,30 @@
     <h3>Add New Employee</h3>
     <hr/>
 
-    <form th:action="@{/saveEmployee}" th:object="${employee}" method="POST">
+    <form   method="POST" class="table" id="employee-form">
 
-        <input type="text" th:field="*{name}" class="form-control col-4 mb-4" placeholder="Enter Name" />
+        <input type="text"  class="form-control col-4 mb-4" placeholder="Enter Name" />
 
-        <input type="text" th:field="*{email}" class="form-control col-4 mb-4" placeholder="Enter email" />
+        <input type="text"  class="form-control col-4 mb-4" placeholder="Enter email" />
 
-        <input type="text" th:field="*{department}" class="form-control col-4 mb-4" placeholder="Enter department" />
+        <input type="text"  class="form-control col-4 mb-4" placeholder="Enter department" />
+        <input type="file" name="file" class="form-control col-4 mb-4" placeholder="Enter avatar" />
 
         <button type="submit" class="btn btn-primary col-2">Save</button>
-        <input type="hidden" th:field="*{id}" />
+        <input type="hidden"  />
 
     </form>
     <hr/>
     <a th:href="@{/list}">Back to list</a>
 </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#employee-form").DataTable({
+                "ajax": '../api/employees/{id}',
 
+            })
+
+        })
+    </script>
 </body>
 </html>

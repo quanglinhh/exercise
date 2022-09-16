@@ -1,0 +1,26 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments :: head" />
+
+<body>
+<header th:replace="fragments ::header"/>
+<div class="container" >
+
+    <h3>Mark form</h3>
+    <hr/>
+
+    <form th:action="@{/saveMark}" th:object="${mark}" method="POST">
+        <input type="text" th:field="*{tblstudentByStudentid.id}" name ="name" class="form-control col-4 mb-4" placeholder="Enter Student Id" />
+        <input type="text" th:field="*{tblsubjectBySubjectid.id}" name="note" class="form-control col-4 mb-4" placeholder="Enter Code" />
+        <input type="text" th:field="*{written}" name="note" class="form-control col-4 mb-4" placeholder="Enter Written Mark" />
+        <input type="text" th:field="*{practical}" name="note" class="form-control col-4 mb-4" placeholder="Enter Practical Mark" />
+        <input type="text" th:field="*{note}" name="note" class="form-control col-4 mb-4" placeholder="Enter Note" />
+        <button type="submit" class="btn btn-primary col-2">Save</button>
+        <input type="hidden" th:field="*{id}" name="id"/>
+    </form>
+    <hr/>
+    <a th:href="@{/mark/list}">Back to list</a>
+</div>
+
+</body>
+</html>

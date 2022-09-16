@@ -1,0 +1,51 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/indexx.html}"
+>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+          crossorigin="anonymous"/>
+    <style>
+        .form-inline{
+            display: unset;
+        }
+        .input:required {
+            border-color: #800000;
+            border-width: 3px;
+        }
+        input:required:invalid {
+            border-color: #c00000;
+        }
+    </style>
+</head>
+
+<body layout:fragment="content">
+
+    <div class="container" >
+        <hr/>
+        <form th:action="@{/saveRoom}" th:object="${room}" method="POST" style="margin-top: 100px; margin-left: 100px" enctype="multipart/form-data">
+            <input type="text" th:field="*{address}" name ="address" class="form-control col-4 mb-4" placeholder="Enter address" />
+            <input type="text" th:field="*{area}" name="area" class="form-control col-4 mb-4" placeholder="Enter Area" />
+            <input type="text" th:field="*{price}" name="price" class="form-control col-4 mb-4" placeholder="Enter Price by month" />
+            <input type="text" th:field="*{beds}" name="beds" class="form-control col-4 mb-4" placeholder="Beds"/>
+            <input type="text" th:field="*{baths}" name="baths" class="form-control col-4 mb-4" placeholder="Baths"/>
+            <input type="text" th:field="*{garage}" name="garage" class="form-control col-4 mb-4" placeholder="Garage"/>
+            <div class="col-md-4"><label>Image</label><input type="file" name="file" class="form-control " placeholder="Enter image" /></div>
+            <div class="col-sm-4" >
+                <label  class="form-label">Nội dung bài đăng</label>
+                <textarea class="form-control" required name="postContent" rows="5" cols="50"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary col-2">Save</button>
+<!--            <input type="hidden" th:field="*{id}" name="id"/>-->
+        </form>
+        <hr/>
+        <a >Back to list</a>
+    </div>
+
+
+</body>
+</html>

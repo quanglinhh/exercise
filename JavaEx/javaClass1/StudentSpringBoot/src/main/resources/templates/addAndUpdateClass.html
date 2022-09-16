@@ -1,0 +1,23 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments :: head" />
+
+<body>
+<header th:replace="fragments ::header"/>
+<div class="container">
+
+    <h3>Student form</h3>
+    <hr/>
+
+    <form th:action="@{/saveClass}" th:object="${class}" method="POST">
+        <input type="text" th:field="*{name}" name ="name" class="form-control col-4 mb-4" placeholder="Enter Name" />
+        <input type="text" th:field="*{note}" name="note" class="form-control col-4 mb-4" placeholder="Enter Note" />
+        <button type="submit" class="btn btn-primary col-2">Save</button>
+        <input type="hidden" th:field="*{id}" name="id"/>
+    </form>
+    <hr/>
+    <a th:href="@{/class/list}">Back to list</a>
+</div>
+
+</body>
+</html>

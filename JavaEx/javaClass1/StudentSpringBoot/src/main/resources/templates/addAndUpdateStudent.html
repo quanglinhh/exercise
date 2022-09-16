@@ -1,0 +1,40 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments :: head" />
+
+<body>
+<header th:replace="fragments ::header"/>
+<div class="container">
+
+    <h3>Student form</h3>
+    <hr/>
+
+    <form th:action="@{/saveStudent}" th:object="${student}"  method="POST"  enctype="multipart/form-data">
+        <input type="text" th:field="*{studentname}" required  class="form-control col-4 mb-4" placeholder="Enter Name" />
+
+         <div class="alert alert-warning" th:if="${#fields.hasErrors('studentname')}" th:errors="*{studentname}"></div>
+        <input type="text" th:field="*{studentcode}" required class="form-control col-4 mb-4" placeholder="Enter Code" />
+
+        <div class="alert alert-warning" th:if="${#fields.hasErrors('studentcode')}" th:errors="*{studentcode}"></div>
+        <input type="text" th:field="*{email}" required  class="form-control col-4 mb-4" placeholder="Enter email" />
+
+        <div class="alert alert-warning" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></div>
+        <input type="text" th:field="*{address}" required class="form-control col-4 mb-4" placeholder="Enter address" />
+        <div class="alert alert-warning" th:if="${#fields.hasErrors('address')}" th:errors="*{address}"></div>
+        <input type="text" th:field="*{phone}" required class="form-control col-4 mb-4" placeholder="Enter phone" />
+        <div class="alert alert-warning" th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}"></div>
+        <input type="text" th:field="*{tblclassByClassid.id}" required class="form-control col-4 mb-4" placeholder="Enter classId" />
+        <div class="alert alert-warning" th:if="${#fields.hasErrors('tblclassByClassid.id')}" th:errors="*{tblclassByClassid.id}"></div>
+        <input type="file" name="file" class="form-control col-4 mb-4" placeholder="Enter avatar" />
+        <button type="submit" class="btn btn-primary col-2">Save</button>
+        <input type="hidden" th:field="*{id}" />
+    </form>
+    <hr/>
+    <a th:href="@{/student/list}">Back to list</a>
+</div>
+
+</body>
+</html>
+<script type="text/javascript">
+
+</script>

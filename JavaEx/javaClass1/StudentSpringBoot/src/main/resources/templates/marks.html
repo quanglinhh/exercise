@@ -1,0 +1,45 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments :: head" />
+
+<body>
+<header th:replace="fragments ::header"/>
+<div class="container" >
+    <div class="fix">
+        <h2>List Mark</h2>
+        <hr/>
+        <a th:href="@{/addMark}" class="btn btn-primary mb-2">Add mark</a>
+        <table class="table table-bordered table-striped " id="mark-table" >
+            <thead>
+            <th>Student</th>
+            <th>Subject</th>
+            <th>Written</th>
+            <th>Practical</th>
+            <th>Note</th>
+            <th>Action</th>
+            </thead>
+            <tbody>
+            <tr th:each="mark: ${marks}">
+                <td th:text="${mark.tblstudentByStudentid.studentname}"></td>
+                <td th:text="${mark.tblsubjectBySubjectid.name}"></td>
+                <td th:text="${mark.written}"></td>
+                <td th:text="${mark.practical}"></td>
+                <td th:text="${mark.note}"></td>
+                <td>
+                    <a th:href="@{/markUpdate(markId=${mark.id})}" class="btn btn-info">Update</a>
+                    <a th:href="@{/deleteMark(markId=${mark.id})}" class="btn btn-danger ml-2">Delete</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.12.1/datatables.min.js"></script>
+<script>
+    $(document).ready(function (){
+        $("#mark-table").DataTable();
+    })
+</script>
+</body>
+
+</html>

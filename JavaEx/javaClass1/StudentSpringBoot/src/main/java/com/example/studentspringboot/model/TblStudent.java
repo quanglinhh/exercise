@@ -3,6 +3,7 @@ package com.example.studentspringboot.model;
 import com.fasterxml.jackson.annotation.*;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 import java.util.Collection;
 import java.util.Objects;
 
@@ -18,25 +19,38 @@ public class TblStudent {
     @Column(name = "id")
     private long id;
     @Basic
+
     @Column(name = "studentname")
     private String studentname;
     @Basic
     @Column(name = "studentcode")
+
     private String studentcode;
     @Basic
     @Column(name = "email")
+
     private String email;
     @Basic
     @Column(name = "address")
+
     private String address;
     @Basic
     @Column(name = "phone")
     private String phone;
+
+    @Basic
+    @Column(name="avatar")
+    private String avatar;
+
+
+
     //    @Basic
 //    @Column(name = "classid")
 //    private Long classid;
     @ManyToOne(fetch = FetchType.EAGER)
+    @JsonIgnore
     @JoinColumn(name = "classid", referencedColumnName = "id")
+
 //    @JsonIgnore
     private TblClass tblclassByClassid;
 
@@ -101,7 +115,14 @@ public class TblStudent {
         this.phone = phone;
     }
 
-//    public Long getClassid() {
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+    //    public Long getClassid() {
 //        return classid;
 //    }
 //
@@ -114,12 +135,12 @@ public class TblStudent {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         TblStudent that = (TblStudent) o;
-        return id == that.id && Objects.equals(studentname, that.studentname) && Objects.equals(studentcode, that.studentcode) && Objects.equals(email, that.email) && Objects.equals(address, that.address) && Objects.equals(phone, that.phone) ;
+        return id == that.id && Objects.equals(studentname, that.studentname) && Objects.equals(studentcode, that.studentcode) && Objects.equals(email, that.email) && Objects.equals(address, that.address) && Objects.equals(phone, that.phone) && Objects.equals(avatar, that.avatar);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, studentname, studentcode, email, address, phone);
+        return Objects.hash(id, studentname, studentcode, email, address, phone,avatar);
     }
     public TblClass getTblclassByClassid() {
         return tblclassByClassid;

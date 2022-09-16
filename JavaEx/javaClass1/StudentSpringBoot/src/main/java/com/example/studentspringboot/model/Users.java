@@ -1,5 +1,6 @@
 package com.example.studentspringboot.model;
 
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Objects;
@@ -20,6 +21,13 @@ public class Users {
     @Basic
     @Column(name = "password")
     private String password;
+
+    public Users(String username, String email, String encode) {
+    }
+
+    public Users() {
+
+    }
 
     public Long getId() {
         return id;
@@ -66,7 +74,7 @@ public class Users {
         return Objects.hash(id, username, email, password);
     }
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "user_roles",
                 joinColumns = @JoinColumn(name="user_id"),
                 inverseJoinColumns = @JoinColumn(name="role_id"))

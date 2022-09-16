@@ -1,0 +1,25 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments :: head" />
+
+<body>
+<header th:replace="fragments ::header"/>
+<div class="container">
+
+    <h3>Subject form</h3>
+    <hr/>
+
+    <form th:action="@{/saveSubject}" th:object="${subject}" method="POST">
+        <input type="text" th:field="*{description}" class="form-control col-4 mb-4" placeholder="Enter Name" />
+        <input type="text" th:field="*{duration}" class="form-control col-4 mb-4" placeholder="Enter Code" />
+        <input type="text" th:field="*{name}" class="form-control col-4 mb-4" placeholder="Enter email" />
+        <input type="text" th:field="*{sem}" class="form-control col-4 mb-4" placeholder="Enter address" />
+        <button type="submit" class="btn btn-primary col-2">Save</button>
+        <input type="hidden" th:field="*{id}" />
+    </form>
+    <hr/>
+    <a th:href="@{/subject/list}">Back to list</a>
+</div>
+
+</body>
+</html>

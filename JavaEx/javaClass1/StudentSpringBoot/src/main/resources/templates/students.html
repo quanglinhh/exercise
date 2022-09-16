@@ -1,0 +1,48 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments :: head"></head>
+<body>
+<header th:replace="fragments ::header"/>
+<div class="container" style="margin-top: 100px">
+    <div class="fix">
+        <h2>List Employees</h2>
+        <hr/>
+        <a th:href="@{/addStudent}" class="btn btn-primary mb-2">Add student</a>
+        <table class="table table-bordered table-striped " id="student-table" >
+            <thead>
+            <th>Avatar</th>
+            <th>Name</th>
+            <th>Code</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Class</th>
+            <th>Action</th>
+            </thead>
+            <tbody>
+            <tr th:each="st: ${students}">
+                <td><img th:src="${st.avatar}" style="width: 60px; height: 60px;object-fit: cover;"></td>
+                <td th:text="${st.studentname}"></td>
+                <td th:text="${st.studentcode}"></td>
+                <td th:text="${st.email}"></td>
+                <td th:text="${st.address}"></td>
+                <td th:text="${st.phone}"></td>
+                <td th:text="${st.tblclassByClassid.name}"></td>
+                <td>
+                    <a th:href="@{/studentUpdate(studentId=${st.id})}" class="btn btn-info">Update</a>
+                    <a th:href="@{/deleteStudent(studentId=${st.id})}" class="btn btn-danger ml-2">Delete</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+<script>
+    $(document).ready(function (){
+        $("#student-table").DataTable();
+    })
+</script>
+</body>
+
+</html>

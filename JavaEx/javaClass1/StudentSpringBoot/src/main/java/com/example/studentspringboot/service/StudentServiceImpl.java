@@ -20,35 +20,27 @@ public class StudentServiceImpl implements StudentService{
     }
 
     @Override
-    public TblStudent saveStudent(TblStudent student) {
+    public TblStudent addStudent(TblStudent student) {
         //Check Tồn tại studentCode, email, phone
         Optional<TblStudent> studentCheckStudentCode = studentRepository.findByStudentcode(student.getStudentcode());
         Optional<TblStudent> studentCheckEmail = studentRepository.findByEmail(student.getEmail());
         Optional<TblStudent> studentCheckPhone = studentRepository.findByPhone(student.getPhone());
-        System.out.println(studentCheckPhone);
         if(studentCheckStudentCode.isPresent()||studentCheckPhone.isPresent()||studentCheckEmail.isPresent()){
             return (TblStudent) ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED);
         }else{
             return studentRepository.save(student);
         }
+    }
 
+    @Override
+    public TblStudent saveStudent(TblStudent student) {
+        return studentRepository.save(student);
     }
 
     @Override
     public TblStudent updateStudent(TblStudent studentUpdate, long id) {
         if(studentRepository.findById(id).isPresent()){
-            Optional<TblStudent> student = searchStudentById(id);
             studentUpdate.setId(id);
-            student.stream().map(st-> {
-                st.setId(id);
-                st.setStudentname(studentUpdate.getStudentname());
-                st.setStudentcode(studentUpdate.getStudentcode());
-                st.setAddress(studentUpdate.getAddress());
-                st.setEmail(studentUpdate.getEmail());
-                st.setPhone(studentUpdate.getPhone());
-
-                return st;
-            });
         }
         return studentRepository.save(studentUpdate);
 

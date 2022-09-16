@@ -16,7 +16,7 @@ public class TblUserController {
     @Autowired
     TblUserService tblUserService;
     //
-    @RequestMapping(value="/User",method = RequestMethod.GET)
+    @RequestMapping(value="api/User",method = RequestMethod.GET)
     public ResponseEntity<List<TblUser>> listAllUser(){
         List<TblUser> listUser = tblUserService.getAllUser();
 
@@ -25,18 +25,18 @@ public class TblUserController {
         }
         return new ResponseEntity<List<TblUser>>(listUser,HttpStatus.OK);
     }
-    @RequestMapping(value = "/User/{id}",method = RequestMethod.GET)
+    @RequestMapping(value = "api/User/{id}",method = RequestMethod.GET)
     public ResponseEntity<TblUser> getUserById(@PathVariable("id") Long id){
         TblUser u = tblUserService.getOne(id);
         return new ResponseEntity<TblUser>(u,HttpStatus.OK);
     }
-    @RequestMapping(value = "/User",method = RequestMethod.POST)
+    @RequestMapping(value = "api/User",method = RequestMethod.POST)
     public ResponseEntity<TblUser> saveUser(@RequestBody TblUser user){
         tblUserService.saveUser(user);
         //return new RepositoryEntity<TblUser>(user,HttpStatus.ok);
         return ResponseEntity.ok(user);
     }
-    @RequestMapping(value = "/User/{id}",method = RequestMethod.PUT)
+    @RequestMapping(value = "api/User/{id}",method = RequestMethod.PUT)
     public void updateUser(@PathVariable("id") Long id,
                            @RequestBody TblUser user){
         TblUser oldYUser = tblUserService.getOne(id);
@@ -51,7 +51,7 @@ public class TblUserController {
         }
     }
 
-    @RequestMapping(value = "/User/{id}",method = RequestMethod.DELETE)
+    @RequestMapping(value = "api/User/{id}",method = RequestMethod.DELETE)
     public void deleteUser(@PathVariable("id") Long id){
         Optional<TblUser> oldUser = Optional.ofNullable(tblUserService.getOne(id));
         if(oldUser == null){
@@ -62,7 +62,7 @@ public class TblUserController {
 
     }
     //localhost:9090/lsUser
-    @RequestMapping(value="/lsUser",method = RequestMethod.GET)
+    @RequestMapping(value="api/lsUser",method = RequestMethod.GET)
     public ResponseEntity<ListUser> listUser(){
         List<TblUser> listUser = tblUserService.getAllUser();
         ListUser ls = new ListUser();
