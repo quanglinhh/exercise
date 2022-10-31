@@ -28,65 +28,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }
-//    @Override
-//    protected void configure(HttpSecurity http) throws Exception {
-//
-////        http.csrf().disable();
-////        //Cac trang không cần login
-//////        http.authorizeRequests().antMatchers("/").permitAll();
-//////        http.authorizeRequests().antMatchers("/api/**").permitAll();
-//////        http.authorizeRequests().antMatchers("/css/**").permitAll();
-//////        http.authorizeRequests().antMatchers("/js/**").permitAll();
-//////        http.authorizeRequests().antMatchers("/img/**").permitAll();
-////
-////        //"/login",
-//////        "/api/auth/**",
-////        http.authorizeRequests()
-////                .antMatchers("/api/auth/**","/api/**","/login","/logout","/register","/registersubmit","/**/list","/students","/css/**","/img/**").permitAll();
-////        http.authorizeRequests().anyRequest().authenticated();
-////
-////
-////        // Nếu chưa login, nó sẽ redirect tới trang /login.
-////        http.authorizeRequests().antMatchers("/userInfo").access("hasAnyRole('ROLE_USER', 'ROLE_ADMIN')");
-////
-////        // Trang chỉ dành cho ADMIN
-////        http.authorizeRequests().antMatchers("/admin").access("hasRole('ROLE_ADMIN')");
-////        http.authorizeRequests().and().exceptionHandling().accessDeniedPage("/403");
-//
-//         //Cấu hình cho Login Form.
-////        http.authorizeRequests()
-////                .anyRequest().authenticated()
-////                .and().formLogin()//
-////                .loginProcessingUrl("/j_spring_security_check") // Submit URL
-////                .loginPage("/login")//
-////                .defaultSuccessUrl("/home")//
-////                .failureUrl("/login?error=true")//
-////                .usernameParameter("username")//
-////                .passwordParameter("password")
-////                .and().logout().logoutUrl("/logout").logoutSuccessUrl("/logoutSuccessful");
-//
-//
-//        //Con lai phai authen
-////        http.authorizeRequests().anyRequest().authenticated();
-////        http.authorizeRequests().and().formLogin();
-//        //"/api/auth/**","/api/**","/login",
-//        http
-//                .httpBasic()
-//                .and()
-//                .authorizeRequests()
-//                .antMatchers("**/login","/logout","/register","/registersubmit","/**/list","/students","/css/**","/img/**").permitAll()
-//                .and()
-//                .authorizeRequests()
-////                .antMatchers("/secure/**").hasAnyRole("ADMIN")
-//                .anyRequest().authenticated()
-//                .and()
-//                .formLogin()
-//                .permitAll();
-//
-//
-//
-//
-//    }
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable();
