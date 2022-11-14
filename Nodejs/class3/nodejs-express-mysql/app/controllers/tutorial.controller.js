@@ -8,7 +8,7 @@ exports.create = (req, res) => {
         message: "Content can not be empty!"
       });
     }
-  
+
     // Create a Tutorial
     const tutorial = new Tutorial({
       title: req.body.title,
@@ -27,7 +27,6 @@ exports.create = (req, res) => {
     });
   };
 
-// Retrieve all Tutorials from the database (with condition).
 // Retrieve all Tutorials from the database (with condition).
 exports.findAll = (req, res) => {
     const title = req.query.title;
