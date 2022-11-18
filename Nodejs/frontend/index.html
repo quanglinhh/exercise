@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div class="form-group">
+          <label for="exampleInputfirstName">First name</label>
+          <input type="text" class="form-control" id="exampleInputFirstName"  >
+          <small id="emailHelp" class="form-text text-muted">We'll never share your first name with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputLastName">Last name</label>
+            <input type="text" class="form-control" id="exampleInputLastName"  >
+            <small id="emailHelp" class="form-text text-muted">We'll never share your lastname with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputNumber">Mobile number</label>
+            <input type="text" class="form-control" id="exampleInputNumber"  >
+            <small id="emailHelp" class="form-text text-muted">We'll never share your phone number with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputUsername">Username</label>
+            <input type="text" class="form-control" id="exampleInputUsername"  >
+            <small id="emailHelp" class="form-text text-muted">We'll never share your username with anyone else.</small>
+          </div>
+        <div class="form-group">
+          <label for="exampleInputPassword">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword" p>
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+    
+      </form>
+      <button  class="btn btn-primary" onclick="addUser()">Submit</button>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script type="text/javascript" >
+    // src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+      
+        var firstName = document.getElementById('exampleInputFirstName')
+        var lastName = document.getElementById('exampleInputLastName')
+        var mobilePhone = document.getElementById('exampleInputNumber')
+        var username = document.getElementById('exampleInputUsername')
+        var password = document.getElementById('exampleInputPassword')
+        var data = {
+            "firstName":firstName,
+            "lastName":lastName,
+            "mobileNumber":mobilePhone,
+            "username":username,
+            "password":password
+        }
+       
+     
+        function addUser() {     
+            $.ajax({
+                    type: "POST",
+                    url: "http://localhost:8085/api/users",
+                    dataType: "json",
+                    contentType: "application/json",
+                    data: JSON.stringify(data),
+                    success: function (response) {
+                        alert('THANH cONG')
+                    },
+                    error: function (err) {
+                     alert(err)
+                }
+            })
+        }
+</script>
+</html>

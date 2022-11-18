@@ -40,3 +40,10 @@ exports.findAll = (req,res)=>{
     })
 
 }
+//Delete customer
+exports.delete =(req,res)=>{
+    const name = req.query.name
+    Customer.delete(name,(err,data)=>{
+        res.send(data)
+    })
+}

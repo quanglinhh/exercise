@@ -35,4 +35,14 @@ Customer.findAll =(name,result)=>{
         result(null,res)
     })
 }
+
+Customer.delete=(name)=>{
+    let query = "DELETE FROM customer" 
+    if(name){
+        query +=`WHERE name LIKE'%${name}'` 
+    }
+    sql.query(query,(err,res)=>{
+        result(null,res)
+    })
+}
 module.exports =Customer;
