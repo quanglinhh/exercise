@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+<div class="row">
+
+    @foreach (var m in Model)
+    {
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <a asp-controller="Home" asp-action="Detail" asp-route-id="@m.SlNo">
+                    <img src="~/Images/@m.Url" class="card-img-top" alt="..." style="overflow: hidden; position: relative; width:200px; height:200px; cursor:pointer">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">@m.MobileName</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    @*<a href="@Url.Action("AddToCart", "ShoppingCart", m)" class="btn btn-primary">Add to Cart</a>*@
+                    @Html.ActionLink("Add to Cart", "AddToCart", "ShoppingCart", new { id = "123" }, null)
+
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
+
+

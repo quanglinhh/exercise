@@ -1,0 +1,37 @@
+﻿@model IEnumerable<ShoppingMobile.Models.Mobile>
+
+@{
+    ViewBag.Title = "MyOrder";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>My Orders</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Mobile Name</th>
+            <th scope="col">Image</th>
+            <th scope="col">Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <th scope="row">@item.slNo</th>
+            <td>@item.MobileName</td>
+            <td><img id="img1" src="~/Images/@item.url" height="100" width="75" /></td>
+            <td>@item.Price</td>
+            <td>
+                <button id="btn_delete" class="label label-primary" data-slno="@item.slNo" onclick="location.href='@Url.Action("Remove","ShoppingCart", item)'">
+                    <img src="~/Icons/delete.png" height="30" width="30" />
+                </button>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+<a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Continue Shopping</a>

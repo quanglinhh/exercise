@@ -1,0 +1,31 @@
+﻿@model IEnumerable<ShoppingMobile.Models.Mobile>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@*<div class="jumbotron">
+        <h1>ASP.NET</h1>
+        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+        <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    </div>*@
+
+<div class="row">
+
+    @foreach (var m in Model)
+    {
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <a href="@Url.Action("EachMobileDetails", "Home", m)">
+                    <img src="~/Images/@m.url" class="card-img-top" alt="..." style="overflow: hidden; position: relative; width:200px; height:200px; cursor:pointer">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">@m.MobileName</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="@Url.Action("AddToCart", "ShoppingCart", m)" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    }
+   
+</div>
