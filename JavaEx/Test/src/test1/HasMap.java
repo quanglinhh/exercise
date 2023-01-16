@@ -13,7 +13,7 @@ public class HasMap {
         hasmap.put(22,422);
         hasmap.put(12,500);
         hasmap.put(10,663);
-        hasmap.put(17,823);
+        String newString = "asdasd";
 
         System.out.println(hasmap);
 

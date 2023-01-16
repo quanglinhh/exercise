@@ -5,29 +5,311 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef1a2344-06ad-4242-829e-cb1256dcd002" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../AccuWeather/src/weather/Controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AccuWeather/src/weather/WeatherApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AccuWeather/src/weather/repository/SQLServerConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AccuWeather/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AccuWeather/.idea/libraries/gson_2_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AccuWeather/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AccuWeather/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AccuWeather/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AccuWeather/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AccuWeather/AccuWeather.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AccuWeather/out/production/AccuWeather/Temperature.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AccuWeather/out/production/AccuWeather/Weather.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AccuWeather/out/production/AccuWeather/WeatherApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AccuWeather/out/production/AccuWeather/WeatherData$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AccuWeather/out/production/AccuWeather/WeatherData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AccuWeather/src/Temperature.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AccuWeather/src/weather/Temperature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AccuWeather/src/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AccuWeather/src/weather/Weather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AccuWeather/src/WeatherApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AccuWeather/src/WeatherData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AccuWeather/src/weather/WeatherData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../connectToSQLServer/out/production/connectToSQLServer/CallableStatementDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../connectToSQLServer/out/production/connectToSQLServer/ReadEmployeeData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../connectToSQLServer/out/production/connectToSQLServer/SQLServerConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../connectToSQLServer/src/SQLServerConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../connectToSQLServer/src/SQLServerConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/.vs/JwtApiSample/DesignTimeBuild/.dtbcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/.vs/JwtApiSample/FileContentIndex/150b3fdc-9c57-4e35-9183-0c9bb4c9967b.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/.vs/JwtApiSample/FileContentIndex/3c6711df-3c89-4819-b116-581068732fd1.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/.vs/JwtApiSample/FileContentIndex/5c0e684a-7d40-408c-b028-7058faa8d972.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/.vs/JwtApiSample/FileContentIndex/af4c6b9f-0311-4338-8aef-a5e7c25e0eb4.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/.vs/JwtApiSample/FileContentIndex/read.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/.vs/JwtApiSample/config/applicationhost.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/.vs/JwtApiSample/v17/.futdcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/.vs/JwtApiSample/v17/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/.vs/ProjectEvaluation/jwtapisample.metadata.v5.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/.vs/ProjectEvaluation/jwtapisample.projects.v5.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/Controllers/ProductsController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/Controllers/TokenController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/JwtApiSample.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/JwtApiSample.csproj.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/Models/Dto/UserLoginDto.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/Models/JwtApiContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/Models/Product.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/Models/UserInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Humanizer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/JwtApiSample.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/JwtApiSample.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/JwtApiSample.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/JwtApiSample.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/JwtApiSample.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/MessagePack.Annotations.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/MessagePack.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.AspNetCore.Razor.Language.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.Bcl.AsyncInterfaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.Build.Framework.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.Build.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.Features.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.Scripting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.CodeAnalysis.Features.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.CodeAnalysis.Razor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.CodeAnalysis.Scripting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.CodeAnalysis.VisualBasic.Features.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.CodeAnalysis.VisualBasic.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.CodeAnalysis.Workspaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.CodeAnalysis.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.DiaSymReader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.DotNet.Scaffolding.Shared.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.Identity.Client.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.IdentityModel.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.NET.StringTools.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.OpenApi.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.VisualStudio.Debugger.Contracts.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/NuGet.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/NuGet.Configuration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/NuGet.DependencyResolver.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/NuGet.Frameworks.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/NuGet.LibraryModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/NuGet.Packaging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/NuGet.ProjectModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/NuGet.Protocol.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/NuGet.Versioning.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/System.Composition.AttributedModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/System.Composition.Convention.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/System.Composition.Hosting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/System.Composition.Runtime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/System.Composition.TypedParts.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/System.Drawing.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/System.Runtime.Caching.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/System.Security.Permissions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/System.Windows.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/dotnet-aspnet-codegenerator-design.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/Debug/net6.0/JwtApiSample.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/Debug/net6.0/JwtApiSample.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/Debug/net6.0/JwtApiSample.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/Debug/net6.0/JwtApiSample.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/Debug/net6.0/JwtApiSample.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/Debug/net6.0/JwtApiSample.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/Debug/net6.0/JwtApiSample.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/Debug/net6.0/JwtApiSample.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/Debug/net6.0/JwtApiSample.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/Debug/net6.0/JwtApiSample.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/Debug/net6.0/JwtApiSample.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/Debug/net6.0/JwtApiSample.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/Debug/net6.0/JwtApiSample.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/Debug/net6.0/JwtApiSample.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/Debug/net6.0/JwtApiSample.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/Debug/net6.0/apphost.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/Debug/net6.0/ref/JwtApiSample.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/Debug/net6.0/refint/JwtApiSample.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/Debug/net6.0/staticwebassets.build.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/Debug/net6.0/staticwebassets/msbuild.build.JwtApiSample.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.JwtApiSample.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.JwtApiSample.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/JwtApiSample.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/JwtApiSample.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/JwtApiSample.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CSharp/JwtApiSample/JwtApiSample/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test1/HasMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test1/HasMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,12 +336,12 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/exercise/exercise/JavaEx/Test"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/exercise/exercise/JavaEx/Test&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Test">
     <configuration name="ListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="list.ListTest" />
@@ -162,6 +444,7 @@
       <workItem from="1650963188955" duration="474000" />
       <workItem from="1651045846063" duration="50000" />
       <workItem from="1652609988666" duration="10000" />
+      <workItem from="1673880018469" duration="190000" />
     </task>
     <servers />
   </component>
