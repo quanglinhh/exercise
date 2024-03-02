@@ -18,7 +18,6 @@ Route::get('/', function () {
     return redirect("/books");
 });
 Route::resource('books', App\Http\Controllers\BookController::class);
-// Route::get('/books/create', [BookController::class, 'create'])->name('books.create');
-// Route::post('/books', [BookController::class, 'store'])->name('books.store');
+Route::get('/search',[BookController::class,'search']);
 
 

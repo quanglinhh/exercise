@@ -14,7 +14,6 @@ class BookController extends Controller
         return view('books.index', compact('books'));
     }
 
-
     public function create()
     {
         return view('books.create');
@@ -33,6 +32,14 @@ class BookController extends Controller
 
         Book::create($request->all());
         return redirect()->route('books.index')->with('success','Created Successfully.');
+    }
+
+
+    public function search(Request $request)
+    {
+        $search = $request -> search;
+        $books = Book::where('title', 'like', "%$search%")->get();
+        return view('books.index', compact('books'));
     }
 
 }

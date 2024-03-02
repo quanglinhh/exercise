@@ -1,51 +1,76 @@
-@extends('categories.layout')
+@extends('layouts.app')
+
 @section('content')
-   <div class="row">
-       <div class="col-lg-12">
-           <h2 class="text-center">Categoty Management</h2>
-       </div>
-       <div class="col-lg-12 text-center" style="margin-top: 10px;margin-bottom: 10px;">
-           <a class="btn btn-success" href="{{ route('categories.create') }}">Add Category</a>
-       </div>
-   </div>
-   @if ($message = Session::get('success'))
-      <div class="alert alert-success">
-          {{ $message }}
-      </div>
-   @endif
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="text-center">List of Books</h2>
+        </div>
+    </div>
 
-   @if(sizeof($categories) > 0)
-      <table class="table table-bordered">
-          <tr>
-              <th>No</th>
-              <th>Category Name</th>
-              <th width="280px">More</th>
-          </tr>
-          @foreach ($categories as $category)
-              <tr>
-                  <td>{{ ++$i }}</td>
-                  <td>{{ $category->category_name }}</td>
-                  <td>
-                      <form action="{{ route('categories.destroy',$category->id) }}"
-                            method="POST">
-                          <a class="btn btn-info"
-                             href="{{ route('categories.show',$category->id) }}">Show</a>
-                          <a class="btn btn-primary"
-                          href="{{ route('categories.edit',$category->id) }}">Edit</a>
-                          @csrf
-                          @method('DELETE')
-                          <button type="submit" class="btn btn-danger">Delete</button>
+    <div class="row mb-3">
+        <div class="col-lg-6">
+            <a href="{{ route('books.create') }}" class="btn btn-success">Add New Book</a>
+        </div>
+        <div class="col-lg-6">
+            <input type="text" class="form-control" id="searchInput" placeholder="Search by title...">
+        </div>
+        <div class="col-lg-3">
+            <button type="button" class="btn btn-primary" id="searchButton">Search</button>
+        </div>
+    </div>
 
-                      </form>
-                  </td>
-              </tr>
-          @endforeach
-      </table>
-      <div class="col-lg-12 text-center" style="margin-top: 10px;margin-bottom: 10px;">
-           <a class="btn btn-success" href="{{ route('products.index') }}">Product</a>
-       </div>
-   @else
-     <div class="alert alert-alert">Start Adding to the Database.</div>
-   @endif
-   {!! $categories->links() !!}
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="booksTable">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author ID</th>
+                            <th>ISBN</th>
+                            <th>Publication Year</th>
+                            <th>Available</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($books as $book)
+                        <tr>
+                            <td>{{ $book->title }}</td>
+                            <td>{{ $book->authorid }}</td>
+                            <td>{{ $book->ISBN }}</td>
+                            <td>{{ $book->pub_year }}</td>
+                            <td>{{ $book->available }}</td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+@endsection
+
+@section('scripts')
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('#searchButton').click(function(){
+                var searchValue = $('#searchInput').val().toLowerCase();
+                $('#booksTable tbody tr').hide();
+                $('#booksTable tbody tr').each(function(){
+                    var title = $(this).find('td:first').text().toLowerCase();
+                    if(title.includes(searchValue)){
+                        $(this).show();
+                    }
+                });
+            });
+
+            // Reset search when input is empty
+            $('#searchInput').keyup(function(){
+                var searchValue = $(this).val().toLowerCase();
+                if(searchValue == ''){
+                    $('#booksTable tbody tr').show();
+                }
+            });
+        });
+    </script>
 @endsection
